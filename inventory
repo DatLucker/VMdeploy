@@ -9,6 +9,9 @@
 deployuser=anevdokimov
 deploypass=Flagshtock454
 
+db_user=postgres
+db_password=user
+db_name=pod_fsoo
 
 [1sgar01-03]
 '1sgar01.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454 
