@@ -1,0 +1,19 @@
+[all]
+'1sgar01.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454 
+
+'1sgar02.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454 
+
+'1sgar03.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454 
+
+[all:vars]
+deployuser=anevdokimov
+deploypass=Flagshtock454
+
+
+[1sgar01-03]
+'1sgar01.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454 
+'1sgar03.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454
+
+
+[1sgar02]
+'1sgar02.dmz.aorti.tech' ansible_user=anevdokimov ansible_password=Flagshtock454 

@@ -1,0 +1,676 @@
+{
+    "_ansible_facts_gathered": true,
+    "ansible_all_ipv4_addresses": [
+        "172.23.133.203"
+    ],
+    "ansible_all_ipv6_addresses": [
+        "fe80::84c2:7aff:fe63:48a6"
+    ],
+    "ansible_apparmor": {
+        "status": "disabled"
+    },
+    "ansible_architecture": "x86_64",
+    "ansible_bios_date": "04/01/2014",
+    "ansible_bios_version": "rel-1.15.0-0-g2dd4b9b3f840-prebuilt.qemu.org",
+    "ansible_cmdline": {
+        "BOOT_IMAGE": "/boot/vmlinuz-4.15.3-2-hardened",
+        "kernel.kptr_restrict": "1",
+        "page_poison": "1",
+        "parsec.max_ilev": "0",
+        "pti": "on",
+        "quiet": true,
+        "ro": true,
+        "root": "UUID=cf95e97b-a2e0-4adf-b74b-08455e311a6a",
+        "slab_nomerge": true,
+        "slub_debug": "P",
+        "user.max_user_namespaces": "0",
+        "vsyscall": "none"
+    },
+    "ansible_date_time": {
+        "date": "2022-08-15",
+        "day": "15",
+        "epoch": "1660543073",
+        "hour": "08",
+        "iso8601": "2022-08-15T05:57:53Z",
+        "iso8601_basic": "20220815T085753343872",
+        "iso8601_basic_short": "20220815T085753",
+        "iso8601_micro": "2022-08-15T05:57:53.344000Z",
+        "minute": "57",
+        "month": "08",
+        "second": "53",
+        "time": "08:57:53",
+        "tz": "MSK",
+        "tz_offset": "+0300",
+        "weekday": "\u041f\u043e\u043d\u0435\u0434\u0435\u043b\u044c\u043d\u0438\u043a",
+        "weekday_number": "1",
+        "weeknumber": "33",
+        "year": "2022"
+    },
+    "ansible_default_ipv4": {
+        "address": "172.23.133.203",
+        "alias": "ens18",
+        "broadcast": "172.23.133.255",
+        "gateway": "172.23.133.129",
+        "interface": "ens18",
+        "macaddress": "86:c2:7a:63:48:a6",
+        "mtu": 1500,
+        "netmask": "255.255.255.128",
+        "network": "172.23.133.128",
+        "type": "ether"
+    },
+    "ansible_default_ipv6": {},
+    "ansible_device_links": {
+        "ids": {
+            "sda": [
+                "scsi-0QEMU_QEMU_HARDDISK_drive-scsi1"
+            ],
+            "sda1": [
+                "scsi-0QEMU_QEMU_HARDDISK_drive-scsi1-part1"
+            ],
+            "sr0": [
+                "ata-QEMU_DVD-ROM_QM00003"
+            ]
+        },
+        "labels": {},
+        "masters": {},
+        "uuids": {
+            "sda1": [
+                "cf95e97b-a2e0-4adf-b74b-08455e311a6a"
+            ]
+        }
+    },
+    "ansible_devices": {
+        "loop0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop2": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop3": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop4": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop5": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop6": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop7": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "0",
+            "sectorsize": "512",
+            "size": "0.00 Bytes",
+            "support_discard": "0",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sda": {
+            "holders": [],
+            "host": "SCSI storage controller: Red Hat, Inc Virtio SCSI",
+            "links": {
+                "ids": [
+                    "scsi-0QEMU_QEMU_HARDDISK_drive-scsi1"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "QEMU HARDDISK",
+            "partitions": {
+                "sda1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [
+                            "scsi-0QEMU_QEMU_HARDDISK_drive-scsi1-part1"
+                        ],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "cf95e97b-a2e0-4adf-b74b-08455e311a6a"
+                        ]
+                    },
+                    "sectors": "2147479552",
+                    "sectorsize": 512,
+                    "size": "1024.00 GB",
+                    "start": "2048",
+                    "uuid": "cf95e97b-a2e0-4adf-b74b-08455e311a6a"
+                }
+            },
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "2147483648",
+            "sectorsize": "512",
+            "size": "1.00 TB",
+            "support_discard": "4096",
+            "vendor": "QEMU",
+            "virtual": 1
+        },
+        "sr0": {
+            "holders": [],
+            "host": "IDE interface: Intel Corporation 82371SB PIIX3 IDE [Natoma/Triton II]",
+            "links": {
+                "ids": [
+                    "ata-QEMU_DVD-ROM_QM00003"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "QEMU DVD-ROM",
+            "partitions": {},
+            "removable": "1",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "cfq",
+            "sectors": "2097151",
+            "sectorsize": "512",
+            "size": "1024.00 MB",
+            "support_discard": "0",
+            "vendor": "QEMU",
+            "virtual": 1
+        }
+    },
+    "ansible_distribution": "Astra Linux (Smolensk)",
+    "ansible_distribution_file_parsed": true,
+    "ansible_distribution_file_path": "/etc/os-release",
+    "ansible_distribution_file_variety": "NA",
+    "ansible_distribution_major_version": "1",
+    "ansible_distribution_release": "smolensk",
+    "ansible_distribution_version": "1.6",
+    "ansible_dns": {
+        "nameservers": [
+            "172.23.134.110",
+            "172.23.134.120"
+        ],
+        "search": [
+            "dmz.aorti.tech"
+        ]
+    },
+    "ansible_domain": "dmz.aorti.tech",
+    "ansible_effective_group_id": 0,
+    "ansible_effective_user_id": 0,
+    "ansible_ens18": {
+        "active": true,
+        "device": "ens18",
+        "ipv4": {
+            "address": "172.23.133.203",
+            "broadcast": "172.23.133.255",
+            "netmask": "255.255.255.128",
+            "network": "172.23.133.128"
+        },
+        "ipv6": [
+            {
+                "address": "fe80::84c2:7aff:fe63:48a6",
+                "prefix": "64",
+                "scope": "link"
+            }
+        ],
+        "macaddress": "86:c2:7a:63:48:a6",
+        "module": "virtio_net",
+        "mtu": 1500,
+        "pciid": "virtio3",
+        "promisc": false,
+        "speed": -1,
+        "type": "ether"
+    },
+    "ansible_env": {
+        "HOME": "/root",
+        "LANG": "C",
+        "LC_ADDRESS": "ru_RU.UTF-8",
+        "LC_ALL": "C",
+        "LC_IDENTIFICATION": "ru_RU.UTF-8",
+        "LC_MEASUREMENT": "ru_RU.UTF-8",
+        "LC_MONETARY": "ru_RU.UTF-8",
+        "LC_NAME": "ru_RU.UTF-8",
+        "LC_NUMERIC": "C",
+        "LC_PAPER": "ru_RU.UTF-8",
+        "LC_TELEPHONE": "ru_RU.UTF-8",
+        "LC_TIME": "ru_RU.UTF-8",
+        "LOGNAME": "root",
+        "MAIL": "/var/mail/root",
+        "PATH": "/usr/lib/parsec/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "PWD": "/home/anevdokimov",
+        "SHELL": "/bin/bash",
+        "SHLVL": "1",
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-viwssgruvuybptwcjnrldlyltodntghy ; /usr/bin/python /home/anevdokimov/.ansible/tmp/ansible-tmp-1660543071.4375734-140475759839726/AnsiballZ_setup.py",
+        "SUDO_GID": "100",
+        "SUDO_UID": "2597",
+        "SUDO_USER": "anevdokimov",
+        "TERM": "xterm-256color",
+        "USER": "root",
+        "USERNAME": "root",
+        "_": "/usr/bin/python"
+    },
+    "ansible_fibre_channel_wwn": [],
+    "ansible_fips": false,
+    "ansible_form_factor": "Other",
+    "ansible_fqdn": "1sgar03.dmz.aorti.tech",
+    "ansible_hostname": "1sgar03",
+    "ansible_hostnqn": "",
+    "ansible_interfaces": [
+        "lo",
+        "ens18"
+    ],
+    "ansible_is_chroot": false,
+    "ansible_iscsi_iqn": "",
+    "ansible_kernel": "4.15.3-2-hardened",
+    "ansible_kernel_version": "#astra25 SMP Fri Mar 27 10:11:39 UTC 2020",
+    "ansible_lo": {
+        "active": true,
+        "device": "lo",
+        "ipv4": {
+            "address": "127.0.0.1",
+            "broadcast": "host",
+            "netmask": "255.0.0.0",
+            "network": "127.0.0.0"
+        },
+        "mtu": 65536,
+        "promisc": false,
+        "type": "loopback"
+    },
+    "ansible_local": {},
+    "ansible_lsb": {
+        "codename": "smolensk",
+        "description": "Astra Linux SE 1.6 (Smolensk)",
+        "id": "AstraLinuxSE",
+        "major_release": "1",
+        "release": "1.6"
+    },
+    "ansible_machine": "x86_64",
+    "ansible_machine_id": "49dd2e066a1b4b4081be094c59b248b7",
+    "ansible_memfree_mb": 28964,
+    "ansible_memory_mb": {
+        "nocache": {
+            "free": 31651,
+            "used": 516
+        },
+        "real": {
+            "free": 28964,
+            "total": 32167,
+            "used": 3203
+        },
+        "swap": {
+            "cached": 0,
+            "free": 0,
+            "total": 0,
+            "used": 0
+        }
+    },
+    "ansible_memtotal_mb": 32167,
+    "ansible_mounts": [
+        {
+            "block_available": 0,
+            "block_size": 4096,
+            "block_total": 0,
+            "block_used": 0,
+            "device": "/parsecfs",
+            "fstype": "parsecfs",
+            "inode_available": 0,
+            "inode_total": 0,
+            "inode_used": 0,
+            "mount": "/parsecfs",
+            "options": "rw,sync,relatime",
+            "size_available": 0,
+            "size_total": 0,
+            "uuid": "N/A"
+        },
+        {
+            "block_available": 249205952,
+            "block_size": 4096,
+            "block_total": 263959661,
+            "block_used": 14753709,
+            "device": "/dev/sda1",
+            "fstype": "ext4",
+            "inode_available": 66937716,
+            "inode_total": 67108864,
+            "inode_used": 171148,
+            "mount": "/",
+            "options": "rw,relatime,errors=remount-ro,data=ordered",
+            "size_available": 1020747579392,
+            "size_total": 1081178771456,
+            "uuid": "cf95e97b-a2e0-4adf-b74b-08455e311a6a"
+        }
+    ],
+    "ansible_nodename": "1sgar03.dmz.aorti.tech",
+    "ansible_os_family": "Astra Linux (Smolensk)",
+    "ansible_pkg_mgr": "apt",
+    "ansible_proc_cmdline": {
+        "BOOT_IMAGE": "/boot/vmlinuz-4.15.3-2-hardened",
+        "kernel.kptr_restrict": "1",
+        "page_poison": "1",
+        "parsec.max_ilev": "0",
+        "pti": "on",
+        "quiet": true,
+        "ro": true,
+        "root": "UUID=cf95e97b-a2e0-4adf-b74b-08455e311a6a",
+        "slab_nomerge": true,
+        "slub_debug": "P",
+        "user.max_user_namespaces": "0",
+        "vsyscall": "none"
+    },
+    "ansible_processor": [
+        "0",
+        "GenuineIntel",
+        "Common KVM processor",
+        "1",
+        "GenuineIntel",
+        "Common KVM processor",
+        "2",
+        "GenuineIntel",
+        "Common KVM processor",
+        "3",
+        "GenuineIntel",
+        "Common KVM processor",
+        "4",
+        "GenuineIntel",
+        "Common KVM processor",
+        "5",
+        "GenuineIntel",
+        "Common KVM processor",
+        "6",
+        "GenuineIntel",
+        "Common KVM processor",
+        "7",
+        "GenuineIntel",
+        "Common KVM processor",
+        "8",
+        "GenuineIntel",
+        "Common KVM processor",
+        "9",
+        "GenuineIntel",
+        "Common KVM processor",
+        "10",
+        "GenuineIntel",
+        "Common KVM processor",
+        "11",
+        "GenuineIntel",
+        "Common KVM processor",
+        "12",
+        "GenuineIntel",
+        "Common KVM processor",
+        "13",
+        "GenuineIntel",
+        "Common KVM processor",
+        "14",
+        "GenuineIntel",
+        "Common KVM processor",
+        "15",
+        "GenuineIntel",
+        "Common KVM processor",
+        "16",
+        "GenuineIntel",
+        "Common KVM processor",
+        "17",
+        "GenuineIntel",
+        "Common KVM processor",
+        "18",
+        "GenuineIntel",
+        "Common KVM processor",
+        "19",
+        "GenuineIntel",
+        "Common KVM processor"
+    ],
+    "ansible_processor_cores": 20,
+    "ansible_processor_count": 1,
+    "ansible_processor_threads_per_core": 1,
+    "ansible_processor_vcpus": 20,
+    "ansible_product_name": "Standard PC (i440FX + PIIX, 1996)",
+    "ansible_product_serial": "NA",
+    "ansible_product_uuid": "13AD724E-D73D-4B3E-9340-01F766F95DE4",
+    "ansible_product_version": "pc-i440fx-6.2",
+    "ansible_python": {
+        "executable": "/usr/bin/python",
+        "has_sslcontext": true,
+        "type": "CPython",
+        "version": {
+            "major": 2,
+            "micro": 13,
+            "minor": 7,
+            "releaselevel": "final",
+            "serial": 0
+        },
+        "version_info": [
+            2,
+            7,
+            13,
+            "final",
+            0
+        ]
+    },
+    "ansible_python_version": "2.7.13",
+    "ansible_real_group_id": 0,
+    "ansible_real_user_id": 0,
+    "ansible_selinux": {
+        "status": "Missing selinux Python library"
+    },
+    "ansible_selinux_python_present": false,
+    "ansible_service_mgr": "systemd",
+    "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKhMtkq1qP4KCpjJVZYSd8z4HJ0lzDp8bPbkiApf8i7ATWsmL7BDGGup87a1dHSwZJ1kHGm+DoH7TCP0N0Nh/mo=",
+    "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIBIhyiJ5TmKtbksTcyR9iupk5HM81mwoeltuO1uYCqff",
+    "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDA5X27Mar8CCJO1jBF+FOO0Tz3Ri3CN9ds9VuymuBgI9ODsIqzDTpKRvNOn5bwSXuAYDxe9JA3CParaeiYvnkoz4RixEtDjmheb8qadoR6oqpS7Q7351aVVCdtaFJoKmBlAQVROBgB9y0vkKxcZaaZbUlDsLzxcQB3hEzHQl3dVAANBl2RATFCFRAr3gXFRbupU0yvMmCaI2ZuyJmilGkLcQk/mrF8Kz0jzw+ts4G8PnFgy9Dk0qRshfhUz6L8+8gOfdGwIqPVE268YXvFKIXeQgvam55TJcSezsT4es+EyxBrNKMyt2rHMhhovgTTdHNznlPjf+JWzD5FOGcBhl6N",
+    "ansible_swapfree_mb": 0,
+    "ansible_swaptotal_mb": 0,
+    "ansible_system": "Linux",
+    "ansible_system_capabilities": [
+        "cap_chown",
+        "cap_dac_override",
+        "cap_dac_read_search",
+        "cap_fowner",
+        "cap_fsetid",
+        "cap_kill",
+        "cap_setgid",
+        "cap_setuid",
+        "cap_setpcap",
+        "cap_linux_immutable",
+        "cap_net_bind_service",
+        "cap_net_broadcast",
+        "cap_net_admin",
+        "cap_net_raw",
+        "cap_ipc_lock",
+        "cap_ipc_owner",
+        "cap_sys_module",
+        "cap_sys_rawio",
+        "cap_sys_chroot",
+        "cap_sys_ptrace",
+        "cap_sys_pacct",
+        "cap_sys_admin",
+        "cap_sys_boot",
+        "cap_sys_nice",
+        "cap_sys_resource",
+        "cap_sys_time",
+        "cap_sys_tty_config",
+        "cap_mknod",
+        "cap_lease",
+        "cap_audit_write",
+        "cap_audit_control",
+        "cap_setfcap",
+        "cap_mac_override",
+        "cap_mac_admin",
+        "cap_syslog",
+        "cap_wake_alarm",
+        "cap_block_suspend",
+        "cap_audit_read+ep"
+    ],
+    "ansible_system_capabilities_enforced": "True",
+    "ansible_system_vendor": "QEMU",
+    "ansible_uptime_seconds": 341921,
+    "ansible_user_dir": "/root",
+    "ansible_user_gecos": "root",
+    "ansible_user_gid": 0,
+    "ansible_user_id": "root",
+    "ansible_user_shell": "/bin/bash",
+    "ansible_user_uid": 0,
+    "ansible_userspace_architecture": "x86_64",
+    "ansible_userspace_bits": "64",
+    "ansible_virtualization_role": "guest",
+    "ansible_virtualization_type": "kvm",
+    "discovered_interpreter_python": "/usr/bin/python",
+    "gather_subset": [
+        "all"
+    ],
+    "module_setup": true
+}

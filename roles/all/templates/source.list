@@ -1,0 +1,9 @@
+deb http://art.rd.aorti.ru/repository/astra_16 smolensk main non-free contrib
+ 
+deb http://art.rd.aorti.ru/repository/astra_16-dev smolensk main contrib non-free
+ 
+deb http://art.rd.aorti.ru/repository/htsts_astra16/ stable main
+ 
+deb http://art.rd.aorti.ru/repository/astra_16-20200722 smolensk main contrib non-free # update 6
+ 
+deb http://art.rd.aorti.ru/repository/astra_16-20200722-dev smolensk main contrib non-free # update 6 

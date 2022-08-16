@@ -1,0 +1,157 @@
+---
+
+- name: Установка пакетов из репозитория
+  apt:
+    name: "{{ item }}"
+    update_cache: true
+  loop:
+
+    - git
+    - gcc=4:6.3.0-4
+    - cmake
+    - libboost-all-dev=1.62.0.1
+    - default-jdk
+    - redis-server
+    # - redis-client
+    - postgresql-9.6
+    - libgdal-dev
+    - libffi-dev
+    - g++
+    - python3-dev
+    - build-essential
+    - openssl 
+    - libssl-dev
+    - make 
+
+- name: Check that the /home/runsgar exists
+  stat:
+    path: /home/runsgar
+  register: stat_result_runsgar
+
+- name: Создание директорий для виртуальных окружений
+  shell: 
+    cmd: mkdir runsgar 
+    chdir: /home
+  when: not stat_result_runsgar.stat.exists
+
+- name: Check that the /home/runsgar/gascalculate exists
+  stat:
+    path: /home/runsgar/gascalculate
+  register: stat_result_0
+
+- name: Создание директории /home/runsgar/gascalculate
+  shell: 
+    cmd: mkdir gascalculate 
+    chdir: /home/runsgar
+  when: not stat_result_0.stat.exists
+
+- name: Check that the /home/runsgar/api_task_sgar exists
+  stat:
+    path: /home/runsgar/api_task_sgar
+  register: stat_result_api_task_sgar
+
+- name: Создание директорий /home/runsgar/api_task_sgar
+  shell: 
+    cmd: mkdir api_task_sgar
+    chdir: /home/runsgar
+  when: not stat_result_api_task_sgar.stat.exists
+
+- name: Check that the /home/runsgar/gascalculate/venv exists
+  stat:
+    path: /home/runsgar/gascalculate/venv
+  register: stat_result
+
+- name: Создание виртуального окружения gascalculate
+  shell: 
+    cmd: python3 -m venv ./venv
+    chdir: /home/runsgar/gascalculate
+  when: not stat_result.stat.exists
+
+- name: Check that the /home/runsgar/api_task_sgar/venv exists
+  stat:
+    path: /home/runsgar/api_task_sgar/venv
+  register: stat_result_1
+
+- name: Создание виртуального окружения api_task_sgar
+  shell: 
+    cmd: python3 -m venv ./venv
+    chdir: /home/runsgar/api_task_sgar
+  when: not stat_result_1.stat.exists
+
+- name: Доставка requirements.txt для gascalculate
+  template:
+    src: templates/requirementsgas.txt
+    dest: /home/runsgar/gascalculate/requirements.txt
+    backup: yes
+
+- name: requirements.txt activate для gascalculate
+  shell:
+    cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install -r requirements.txt
+    chdir: /home/runsgar/gascalculate
+
+- name: Доставка requirements.txt для api_task_sgar
+  template:
+    src: templates/requirementsapi.txt
+    dest: /home/runsgar/api_task_sgar/requirements.txt
+    backup: yes
+
+- name: requirements.txt activate для api_task_sgar
+  shell:
+    cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install wheel && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install -r requirements.txt
+    chdir: /home/runsgar/api_task_sgar
+
+- name: Доставка сервиса api_task_sgar.service
+  template:
+    src: templates/api_task_sgar.service
+    dest: //lib/systemd/system/api_task_sgar.service
+    backup: yes
+
+- name: Старт и активация
+  systemd:
+    name: api_task_sgar.service # not required. Name of the service. This parameter takes the name of exactly one service to work with. When using in a chroot environment you always need to specify the full name i.e. (crond.service).
+    state: started # not required. choices: reloaded;restarted;started;stopped. C(started)/C(stopped) are idempotent actions that will not run commands unless necessary. C(restarted) will always bounce the service. C(reloaded) will always reload.
+    enabled: yes # not required. Whether the service should start on boot. B(At least one of state and enabled are required.)
+
+- name: Check that the /opt/oneTBB exists
+  stat:
+    path: /opt/oneTBB
+  register: stat_result_oneTBB
+
+- name: Установка oneTBB
+  shell:
+    cmd: git clone https://anevdokimov:Flagshtock454@gitlab.rd.aorti.ru/anevdokimov/oneTBB.git && cd oneTBB && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/opt/my_installed_onetbb -DTBB_TEST=OFF .. && cmake --build . && cmake --install .
+    chdir: /opt
+  when: not stat_result_oneTBB.stat.exists
+
+
+# - name: Check that the /opt/Poco exists
+#   stat:
+#     path: /opt/pocolibraries
+#   register: stat_result_poco
+
+# - name: Установка Poco
+#   shell:
+#     cmd: git clone https://anevdokimov:Flagshtock454@gitlab.rd.aorti.ru/anevdokimov/pocolibraries.git && cd pocolibraries && mkdir cmake-build && cd cmake-build && cmake cmake .. && cmake --build . --config Release && cmake --build . --target install
+#     chdir: /opt
+#   when: not stat_result_poco.stat.exists
+
+# - name: Check that the /opt/netcdf exists
+#   stat:
+#     path: /opt/netcdf
+#   register: stat_result_netcdf
+
+# - name: Установка /opt/netcdf
+#   shell:
+#     cmd: git clone https://anevdokimov:Flagshtock454@gitlab.rd.aorti.ru/anevdokimov/netcdf.git && cd netcdf/ && mkdir build && cd build && cmake .. && make && ctest && make install
+#     chdir: /opt
+#   when: not stat_result_netcdf.stat.exists
+
+
+# source .venv/bin/activate
+
+# pip install --no-use-wheel -r python_requirements.txt
+# pip install -r requirements.txt 
+
+
+
+...

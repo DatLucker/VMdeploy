@@ -1,0 +1,12 @@
+[Unit]
+Description=APISGAR
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+WorkingDirectory=/path/to/api_task_sgar
+ExecStart=/bin/bash /path/to/api_task_sgar/start.sh
+
+[Install]
+WantedBy=multi-user.target

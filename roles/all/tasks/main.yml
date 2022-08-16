@@ -1,0 +1,22 @@
+---
+
+- name: Замена файла source.list
+  template:
+    src: templates/source.list
+    dest: /etc/apt/sources.list
+    backup: yes
+
+    
+- name: apt-key
+  shell:
+    chdir: /home/anevdokimov
+    cmd: wget https://art.rd.aorti.ru/repository/infr/apt-keys/astra_7DB1E284F89C2962.key && wget https://art.rd.aorti.ru/repository/infr/apt-keys/0B08528409D4904D_public.asc && apt-key add astra_7DB1E284F89C2962.key && apt-key add 0B08528409D4904D_public.asc
+  
+
+
+- name: Обовление репозитория
+  shell:
+    cmd: apt update -y && apt dist-upgrade # not required. The command to run followed by optional arguments.
+    
+
+...
