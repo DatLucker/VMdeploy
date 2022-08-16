@@ -6,12 +6,19 @@
 #   roles:
 #     - all 
 
-- hosts: 1sgar01-03
+# - hosts: 1sgar01-03
+#   become: true
+#   become_method: sudo
+#   become_user: root
+#   roles:
+#     - 1sgar01-03
+
+- hosts: 1sgar02
   become: true
   become_method: sudo
   become_user: root
   roles:
-    - 1sgar01-03
+    - 1sgar02
 ...
 
 
