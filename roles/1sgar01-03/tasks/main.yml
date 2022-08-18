@@ -86,7 +86,7 @@
 
 - name: requirements.txt activate для gascalculate
   shell:
-    cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install -r requirements.txt
+    cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install -r requirements.txt
     chdir: /home/runsgar/gascalculate
 
 - name: Доставка requirements.txt для api_task_sgar
@@ -122,6 +122,20 @@
     cmd: git clone https://anevdokimov:Flagshtock454@gitlab.rd.aorti.ru/anevdokimov/oneTBB.git && cd oneTBB && mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=/opt/my_installed_onetbb -DTBB_TEST=OFF .. && cmake --build . && cmake --install .
     chdir: /opt
   when: not stat_result_oneTBB.stat.exists
+
+- name: Установка redis.conf
+  template:
+    src: templates/redis.conf # required. Path of a Jinja2 formatted template on the Ansible controller. This can be a relative or an absolute path. The file must be encoded with C(utf-8) but I(output_encoding) can be used to control the encoding of the output template.
+    dest: /etc/redis/redis.conf # required. Location to render the template to on the remote machine.
+    backup: true
+  notify: 
+  - Restart redis
+
+
+
+
+
+
 
 
 # - name: Check that the /opt/Poco exists

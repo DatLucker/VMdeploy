@@ -9242,3 +9242,1852 @@ non-zero return code
 2022-08-16 07:50:10,410 p=566077 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
 2022-08-16 07:50:10,412 p=566077 u=anevdokimov n=ansible | 1sgar01.dmz.aorti.tech     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
 2022-08-16 07:50:10,413 p=566077 u=anevdokimov n=ansible | 1sgar03.dmz.aorti.tech     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-08-16 14:32:30,029 p=126455 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will 
+change, but still be user configurable on deprecation. This feature will be removed in version 2.10. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-16 14:32:30,030 p=126455 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-16 14:32:30,698 p=126455 u=anevdokimov n=ansible | PLAY [1sgar02] ************************************************************************************************************************
+2022-08-16 14:32:30,834 p=126455 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] **********************************************************************************
+2022-08-16 14:32:31,915 p=126455 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:32:31,924 p=126455 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] ************************************************************************************
+2022-08-16 14:32:32,641 p=126455 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unable to change directory before execution: [Errno 2] Нет такого файла или каталога: '/var/www'
+
+2022-08-16 14:32:32,643 p=126455 u=anevdokimov n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-08-16 14:32:32,644 p=126455 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-08-16 14:45:07,522 p=145952 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will 
+change, but still be user configurable on deprecation. This feature will be removed in version 2.10. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-16 14:45:07,522 p=145952 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-16 14:45:07,943 p=145952 u=anevdokimov n=ansible | PLAY [1sgar02] ************************************************************************************************************************
+2022-08-16 14:45:07,982 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] ***************************************************************************************
+2022-08-16 14:45:08,960 p=145952 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:08,966 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] *****************************************************************************************
+2022-08-16 14:45:09,562 p=145952 u=anevdokimov n=ansible | [WARNING]: Consider using the file module with state=directory rather than running 'mkdir'.  If you need to use command because file
+is insufficient you can add 'warn: false' to this command task or set 'command_warnings=False' in ansible.cfg to get rid of this
+message.
+
+2022-08-16 14:45:09,562 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:09,570 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] **********************************************************************************
+2022-08-16 14:45:10,091 p=145952 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:10,100 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] ************************************************************************************
+2022-08-16 14:45:10,677 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:10,683 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ********************************************************************************
+2022-08-16 14:45:11,084 p=145952 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:11,090 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] **********************************************************************************
+2022-08-16 14:45:11,537 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:11,543 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] *********************************************************************************
+2022-08-16 14:45:11,914 p=145952 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:11,920 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ***********************************************************************************
+2022-08-16 14:45:12,363 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:12,370 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] **********************************************************************************
+2022-08-16 14:45:12,770 p=145952 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:12,776 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] ************************************************************************************
+2022-08-16 14:45:13,210 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:45:13,216 p=145952 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] *****************************************************************************************************
+2022-08-16 14:45:27,363 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=postgresql)
+2022-08-16 14:45:28,046 p=145952 u=anevdokimov n=ansible | failed: [1sgar02.dmz.aorti.tech] (item=postgresql-server) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "postgresql-server"
+}
+
+MSG:
+
+No package matching 'postgresql-server' is available
+
+2022-08-16 14:45:31,699 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-16 14:45:33,532 p=145952 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-16 14:45:33,534 p=145952 u=anevdokimov n=ansible | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2022-08-16 14:45:33,536 p=145952 u=anevdokimov n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-08-16 14:45:33,538 p=145952 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=10   changed=5    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-08-16 14:47:14,538 p=154247 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will 
+change, but still be user configurable on deprecation. This feature will be removed in version 2.10. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-16 14:47:14,538 p=154247 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-16 14:47:15,040 p=154247 u=anevdokimov n=ansible | PLAY [1sgar02] ************************************************************************************************************************
+2022-08-16 14:47:15,086 p=154247 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] *****************************************************************************************************
+2022-08-16 14:47:16,545 p=154247 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-16 14:47:17,270 p=154247 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-16 14:47:17,872 p=154247 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-16 14:47:17,880 p=154247 u=anevdokimov n=ansible | TASK [1sgar02 : Create app database] **************************************************************************************************
+2022-08-16 14:47:18,682 p=154247 u=anevdokimov n=ansible | [WARNING]: Module remote_tmp /var/lib/postgresql/.ansible/tmp did not exist and was created with a mode of 0700, this may cause issues
+when running as another user. To avoid this, create the remote_tmp dir with the correct permissions manually
+
+2022-08-16 14:47:18,683 p=154247 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Failed to import the required Python library (psycopg2) on 1sgar02.dmz.aorti.tech's Python /usr/bin/python. Please read module documentation and install in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter
+
+2022-08-16 14:47:18,686 p=154247 u=anevdokimov n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-08-16 14:47:18,687 p=154247 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-08-16 14:49:38,666 p=154609 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will 
+change, but still be user configurable on deprecation. This feature will be removed in version 2.10. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-16 14:49:38,666 p=154609 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-16 14:49:39,121 p=154609 u=anevdokimov n=ansible | PLAY [1sgar02] ************************************************************************************************************************
+2022-08-16 14:49:39,155 p=154609 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] *****************************************************************************************************
+2022-08-16 14:49:40,630 p=154609 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-16 14:49:41,316 p=154609 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-16 14:49:43,149 p=154609 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-16 14:49:43,734 p=154609 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-16 14:49:43,740 p=154609 u=anevdokimov n=ansible | TASK [1sgar02 : Create app database] **************************************************************************************************
+2022-08-16 14:49:44,738 p=154609 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:49:44,745 p=154609 u=anevdokimov n=ansible | TASK [1sgar02 : Create db user] *******************************************************************************************************
+2022-08-16 14:49:45,545 p=154609 u=anevdokimov n=ansible | [WARNING]: Module did not set no_log for no_password_changes
+
+2022-08-16 14:49:45,545 p=154609 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:49:45,553 p=154609 u=anevdokimov n=ansible | TASK [1sgar02 : Правка файла /etc/postgresql.conf] ************************************************************************************
+2022-08-16 14:49:46,199 p=154609 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:49:46,206 p=154609 u=anevdokimov n=ansible | TASK [1sgar02 : Grant db user access to app db] ***************************************************************************************
+2022-08-16 14:49:46,945 p=154609 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-16 14:49:46,955 p=154609 u=anevdokimov n=ansible | TASK [1sgar02 : Start and enable services] ********************************************************************************************
+2022-08-16 14:49:48,000 p=154609 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql)
+2022-08-16 14:49:48,003 p=154609 u=anevdokimov n=ansible | PLAY RECAP ****************************************************************************************************************************
+2022-08-16 14:49:48,003 p=154609 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-18 08:50:00,890 p=39693 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 08:50:00,890 p=39693 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 08:50:01,716 p=39693 u=anevdokimov n=ansible | PLAY [1sgar01-03] ****************************************************************************************************************************************************************************************************
+2022-08-18 08:50:01,776 p=39693 u=anevdokimov n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************************
+2022-08-18 08:50:03,817 p=39693 u=anevdokimov n=ansible | [WARNING]: Platform linux on host 1sgar01.dmz.aorti.tech is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2022-08-18 08:50:03,818 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:04,130 p=39693 u=anevdokimov n=ansible | [WARNING]: Platform linux on host 1sgar03.dmz.aorti.tech is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2022-08-18 08:50:04,130 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:04,138 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка пакетов из репозитория] *****************************************************************************************************************************************************************
+2022-08-18 08:50:05,644 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=git)
+2022-08-18 08:50:05,741 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=git)
+2022-08-18 08:50:06,840 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 08:50:06,958 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 08:50:08,055 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=cmake)
+2022-08-18 08:50:08,173 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=cmake)
+2022-08-18 08:50:09,433 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libboost-all-dev=1.62.0.1)
+2022-08-18 08:50:09,448 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libboost-all-dev=1.62.0.1)
+2022-08-18 08:50:10,622 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=default-jdk)
+2022-08-18 08:50:10,633 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=default-jdk)
+2022-08-18 08:50:11,785 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:50:11,850 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:50:12,983 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:50:13,045 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:50:14,157 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 08:50:14,225 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 08:50:15,317 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 08:50:15,375 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 08:50:16,478 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=g++)
+2022-08-18 08:50:16,535 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=g++)
+2022-08-18 08:50:17,654 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 08:50:17,703 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 08:50:18,821 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 08:50:18,885 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 08:50:20,098 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=openssl)
+2022-08-18 08:50:20,109 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=openssl)
+2022-08-18 08:50:21,267 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 08:50:21,283 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 08:50:22,435 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=make)
+2022-08-18 08:50:22,447 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=make)
+2022-08-18 08:50:22,453 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar exists] **************************************************************************************************************************************************************
+2022-08-18 08:50:23,003 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:23,102 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:23,109 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директорий для виртуальных окружений] ****************************************************************************************************************************************************
+2022-08-18 08:50:23,168 p=39693 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:23,185 p=39693 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:23,193 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/gascalculate exists] *************************************************************************************************************************************************
+2022-08-18 08:50:23,627 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:23,628 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:23,635 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директории /home/runsgar/gascalculate] ***************************************************************************************************************************************************
+2022-08-18 08:50:23,695 p=39693 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:23,704 p=39693 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:23,712 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/api_task_sgar exists] ************************************************************************************************************************************************
+2022-08-18 08:50:24,128 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:24,129 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:24,137 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директорий /home/runsgar/api_task_sgar] **************************************************************************************************************************************************
+2022-08-18 08:50:24,195 p=39693 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:24,208 p=39693 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:24,215 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/gascalculate/venv exists] ********************************************************************************************************************************************
+2022-08-18 08:50:24,698 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:24,718 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:24,727 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание виртуального окружения gascalculate] *****************************************************************************************************************************************************
+2022-08-18 08:50:24,786 p=39693 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:24,804 p=39693 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:24,810 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/api_task_sgar/venv exists] *******************************************************************************************************************************************
+2022-08-18 08:50:25,229 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:25,243 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:25,251 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание виртуального окружения api_task_sgar] ****************************************************************************************************************************************************
+2022-08-18 08:50:25,308 p=39693 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:25,325 p=39693 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:25,333 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка requirements.txt для gascalculate] *******************************************************************************************************************************************************
+2022-08-18 08:50:26,300 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:26,404 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:26,410 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : requirements.txt activate для gascalculate] *******************************************************************************************************************************************************
+2022-08-18 08:50:30,477 p=39693 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:30,591 p=39693 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:30,598 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка requirements.txt для api_task_sgar] ******************************************************************************************************************************************************
+2022-08-18 08:50:31,559 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:31,560 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:31,570 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : requirements.txt activate для api_task_sgar] ******************************************************************************************************************************************************
+2022-08-18 08:50:36,695 p=39693 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:36,720 p=39693 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:36,726 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка сервиса api_task_sgar.service] ***********************************************************************************************************************************************************
+2022-08-18 08:50:37,478 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:37,485 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:37,490 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Старт и активация] ********************************************************************************************************************************************************************************
+2022-08-18 08:50:38,328 p=39693 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:38,762 p=39693 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:38,768 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /opt/oneTBB exists] ****************************************************************************************************************************************************************
+2022-08-18 08:50:39,424 p=39693 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:39,430 p=39693 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:39,439 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка oneTBB] *********************************************************************************************************************************************************************************
+2022-08-18 08:50:39,542 p=39693 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:50:39,544 p=39693 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:50:39,557 p=39693 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка redis.conf] *****************************************************************************************************************************************************************************
+2022-08-18 08:50:39,780 p=39693 u=anevdokimov n=ansible | fatal: [1sgar03.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Could not find or access '/templates/redis.conf' on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+
+2022-08-18 08:50:39,782 p=39693 u=anevdokimov n=ansible | fatal: [1sgar01.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Could not find or access '/templates/redis.conf' on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+
+2022-08-18 08:50:39,783 p=39693 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 08:50:39,784 p=39693 u=anevdokimov n=ansible | 1sgar01.dmz.aorti.tech     : ok=14   changed=3    unreachable=0    failed=1    skipped=6    rescued=0    ignored=0   
+2022-08-18 08:50:39,785 p=39693 u=anevdokimov n=ansible | 1sgar03.dmz.aorti.tech     : ok=14   changed=3    unreachable=0    failed=1    skipped=6    rescued=0    ignored=0   
+2022-08-18 08:53:00,954 p=48741 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 08:53:00,954 p=48741 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 08:53:01,457 p=48741 u=anevdokimov n=ansible | PLAY [1sgar01-03] ****************************************************************************************************************************************************************************************************
+2022-08-18 08:53:01,519 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка пакетов из репозитория] *****************************************************************************************************************************************************************
+2022-08-18 08:53:03,232 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=git)
+2022-08-18 08:53:03,390 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=git)
+2022-08-18 08:53:04,464 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 08:53:04,633 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 08:53:05,669 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=cmake)
+2022-08-18 08:53:05,821 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=cmake)
+2022-08-18 08:53:06,886 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libboost-all-dev=1.62.0.1)
+2022-08-18 08:53:07,024 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libboost-all-dev=1.62.0.1)
+2022-08-18 08:53:08,078 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=default-jdk)
+2022-08-18 08:53:08,198 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=default-jdk)
+2022-08-18 08:53:09,389 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:53:09,401 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:53:10,591 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:53:10,603 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:53:11,811 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 08:53:11,823 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 08:53:13,059 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 08:53:13,077 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 08:53:14,325 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=g++)
+2022-08-18 08:53:14,332 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=g++)
+2022-08-18 08:53:15,522 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 08:53:15,535 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 08:53:16,692 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 08:53:16,703 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 08:53:17,885 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=openssl)
+2022-08-18 08:53:17,898 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=openssl)
+2022-08-18 08:53:19,118 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 08:53:19,120 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 08:53:20,466 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=make)
+2022-08-18 08:53:20,474 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=make)
+2022-08-18 08:53:20,482 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar exists] **************************************************************************************************************************************************************
+2022-08-18 08:53:21,073 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:21,181 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:21,187 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директорий для виртуальных окружений] ****************************************************************************************************************************************************
+2022-08-18 08:53:21,246 p=48741 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:21,260 p=48741 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:21,268 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/gascalculate exists] *************************************************************************************************************************************************
+2022-08-18 08:53:21,698 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:21,705 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:21,711 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директории /home/runsgar/gascalculate] ***************************************************************************************************************************************************
+2022-08-18 08:53:21,781 p=48741 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:21,785 p=48741 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:21,790 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/api_task_sgar exists] ************************************************************************************************************************************************
+2022-08-18 08:53:22,222 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:22,230 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:22,236 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директорий /home/runsgar/api_task_sgar] **************************************************************************************************************************************************
+2022-08-18 08:53:22,297 p=48741 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:22,306 p=48741 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:22,313 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/gascalculate/venv exists] ********************************************************************************************************************************************
+2022-08-18 08:53:22,737 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:22,740 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:22,746 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание виртуального окружения gascalculate] *****************************************************************************************************************************************************
+2022-08-18 08:53:22,812 p=48741 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:22,832 p=48741 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:22,840 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/api_task_sgar/venv exists] *******************************************************************************************************************************************
+2022-08-18 08:53:23,280 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:23,281 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:23,289 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание виртуального окружения api_task_sgar] ****************************************************************************************************************************************************
+2022-08-18 08:53:23,353 p=48741 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:23,362 p=48741 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:23,371 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка requirements.txt для gascalculate] *******************************************************************************************************************************************************
+2022-08-18 08:53:24,393 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:24,525 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:24,532 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : requirements.txt activate для gascalculate] *******************************************************************************************************************************************************
+2022-08-18 08:53:28,608 p=48741 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:28,708 p=48741 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:28,716 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка requirements.txt для api_task_sgar] ******************************************************************************************************************************************************
+2022-08-18 08:53:29,763 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:29,766 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:29,772 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : requirements.txt activate для api_task_sgar] ******************************************************************************************************************************************************
+2022-08-18 08:53:34,988 p=48741 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:35,070 p=48741 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:35,077 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка сервиса api_task_sgar.service] ***********************************************************************************************************************************************************
+2022-08-18 08:53:35,931 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:35,931 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:35,939 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Старт и активация] ********************************************************************************************************************************************************************************
+2022-08-18 08:53:36,879 p=48741 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:37,252 p=48741 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:37,259 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /opt/oneTBB exists] ****************************************************************************************************************************************************************
+2022-08-18 08:53:37,702 p=48741 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:37,703 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:37,711 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка oneTBB] *********************************************************************************************************************************************************************************
+2022-08-18 08:53:37,786 p=48741 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:53:37,800 p=48741 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:37,807 p=48741 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка redis.conf] *****************************************************************************************************************************************************************************
+2022-08-18 08:53:38,897 p=48741 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:53:39,103 p=48741 u=anevdokimov n=ansible | ERROR! The requested handler 'Restart redis' was not found in either the main handlers list nor in the listening handlers list
+2022-08-18 08:57:07,714 p=57854 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 08:57:07,714 p=57854 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 08:57:08,134 p=57854 u=anevdokimov n=ansible | PLAY [1sgar01-03] ****************************************************************************************************************************************************************************************************
+2022-08-18 08:57:08,179 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка пакетов из репозитория] *****************************************************************************************************************************************************************
+2022-08-18 08:57:09,857 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=git)
+2022-08-18 08:57:09,967 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=git)
+2022-08-18 08:57:11,052 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 08:57:11,152 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 08:57:12,236 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=cmake)
+2022-08-18 08:57:12,329 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=cmake)
+2022-08-18 08:57:13,417 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libboost-all-dev=1.62.0.1)
+2022-08-18 08:57:13,483 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libboost-all-dev=1.62.0.1)
+2022-08-18 08:57:14,610 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=default-jdk)
+2022-08-18 08:57:14,656 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=default-jdk)
+2022-08-18 08:57:15,816 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:57:15,836 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:57:17,014 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:57:17,015 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:57:18,187 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 08:57:18,199 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 08:57:19,534 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 08:57:19,539 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 08:57:20,754 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=g++)
+2022-08-18 08:57:20,781 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=g++)
+2022-08-18 08:57:21,944 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 08:57:21,969 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 08:57:23,113 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 08:57:23,152 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 08:57:24,287 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=openssl)
+2022-08-18 08:57:24,329 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=openssl)
+2022-08-18 08:57:25,481 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 08:57:25,515 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 08:57:26,651 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech] => (item=make)
+2022-08-18 08:57:26,709 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech] => (item=make)
+2022-08-18 08:57:26,716 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar exists] **************************************************************************************************************************************************************
+2022-08-18 08:57:27,309 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:27,410 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:27,417 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директорий для виртуальных окружений] ****************************************************************************************************************************************************
+2022-08-18 08:57:27,476 p=57854 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:27,489 p=57854 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:27,495 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/gascalculate exists] *************************************************************************************************************************************************
+2022-08-18 08:57:27,914 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:27,915 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:27,921 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директории /home/runsgar/gascalculate] ***************************************************************************************************************************************************
+2022-08-18 08:57:27,985 p=57854 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:27,987 p=57854 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:27,992 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/api_task_sgar exists] ************************************************************************************************************************************************
+2022-08-18 08:57:28,441 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:28,441 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:28,448 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание директорий /home/runsgar/api_task_sgar] **************************************************************************************************************************************************
+2022-08-18 08:57:28,502 p=57854 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:28,524 p=57854 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:28,531 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/gascalculate/venv exists] ********************************************************************************************************************************************
+2022-08-18 08:57:29,026 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:29,032 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:29,038 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание виртуального окружения gascalculate] *****************************************************************************************************************************************************
+2022-08-18 08:57:29,104 p=57854 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:29,108 p=57854 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:29,115 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /home/runsgar/api_task_sgar/venv exists] *******************************************************************************************************************************************
+2022-08-18 08:57:29,532 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:29,535 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:29,541 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Создание виртуального окружения api_task_sgar] ****************************************************************************************************************************************************
+2022-08-18 08:57:29,603 p=57854 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:29,608 p=57854 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:29,615 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка requirements.txt для gascalculate] *******************************************************************************************************************************************************
+2022-08-18 08:57:30,594 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:30,709 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:30,715 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : requirements.txt activate для gascalculate] *******************************************************************************************************************************************************
+2022-08-18 08:57:34,729 p=57854 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:34,816 p=57854 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:34,823 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка requirements.txt для api_task_sgar] ******************************************************************************************************************************************************
+2022-08-18 08:57:35,647 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:35,654 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:35,660 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : requirements.txt activate для api_task_sgar] ******************************************************************************************************************************************************
+2022-08-18 08:57:40,685 p=57854 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:40,753 p=57854 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:40,765 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Доставка сервиса api_task_sgar.service] ***********************************************************************************************************************************************************
+2022-08-18 08:57:41,865 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:41,867 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:41,876 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Старт и активация] ********************************************************************************************************************************************************************************
+2022-08-18 08:57:42,695 p=57854 u=anevdokimov n=ansible | changed: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:43,115 p=57854 u=anevdokimov n=ansible | changed: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:43,121 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Check that the /opt/oneTBB exists] ****************************************************************************************************************************************************************
+2022-08-18 08:57:43,521 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:43,540 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:43,546 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка oneTBB] *********************************************************************************************************************************************************************************
+2022-08-18 08:57:43,610 p=57854 u=anevdokimov n=ansible | skipping: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:43,619 p=57854 u=anevdokimov n=ansible | skipping: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:43,625 p=57854 u=anevdokimov n=ansible | TASK [1sgar01-03 : Установка redis.conf] *****************************************************************************************************************************************************************************
+2022-08-18 08:57:44,429 p=57854 u=anevdokimov n=ansible | ok: [1sgar01.dmz.aorti.tech]
+2022-08-18 08:57:44,455 p=57854 u=anevdokimov n=ansible | ok: [1sgar03.dmz.aorti.tech]
+2022-08-18 08:57:44,460 p=57854 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 08:57:44,466 p=57854 u=anevdokimov n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************************************
+2022-08-18 08:57:46,371 p=57854 u=anevdokimov n=ansible | [WARNING]: Platform linux on host 1sgar02.dmz.aorti.tech is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2022-08-18 08:57:46,372 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:46,379 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 08:57:47,124 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 08:57:47,666 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 08:57:48,211 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 08:57:48,906 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 08:57:48,914 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Create app database] *********************************************************************************************************************************************************************************
+2022-08-18 08:57:49,585 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:49,591 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Create db user] **************************************************************************************************************************************************************************************
+2022-08-18 08:57:50,247 p=57854 u=anevdokimov n=ansible | [WARNING]: Module did not set no_log for no_password_changes
+
+2022-08-18 08:57:50,247 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:50,255 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Правка файла /etc/postgresql.conf] *******************************************************************************************************************************************************************
+2022-08-18 08:57:50,842 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:50,848 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Grant db user access to app db] **********************************************************************************************************************************************************************
+2022-08-18 08:57:51,463 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:51,471 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Start and enable services] ***************************************************************************************************************************************************************************
+2022-08-18 08:57:52,447 p=57854 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql)
+2022-08-18 08:57:52,457 p=57854 u=anevdokimov n=ansible | TASK [1sgar02 : Установка redis.conf] ********************************************************************************************************************************************************************************
+2022-08-18 08:57:53,826 p=57854 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:53,827 p=57854 u=anevdokimov n=ansible | RUNNING HANDLER [1sgar02 : Restart redis] ****************************************************************************************************************************************************************************
+2022-08-18 08:57:55,470 p=57854 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 08:57:55,472 p=57854 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 08:57:55,473 p=57854 u=anevdokimov n=ansible | 1sgar01.dmz.aorti.tech     : ok=14   changed=3    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2022-08-18 08:57:55,474 p=57854 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-18 08:57:55,474 p=57854 u=anevdokimov n=ansible | 1sgar03.dmz.aorti.tech     : ok=14   changed=3    unreachable=0    failed=0    skipped=6    rescued=0    ignored=0   
+2022-08-18 10:19:42,494 p=204745 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:19:42,494 p=204745 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:19:43,084 p=204745 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:19:43,156 p=204745 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:19:44,631 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:19:45,521 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:19:46,212 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:19:46,928 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:19:47,963 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:20:15,638 p=204745 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:20:17,925 p=204745 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:20:23,005 p=204745 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 10:20:26,709 p=204745 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:20:27,572 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:20:29,316 p=204745 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:20:29,974 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:20:35,170 p=204745 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:20:35,178 p=204745 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:20:35,793 p=204745 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:20:35,800 p=204745 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения gascalculate] ********************************************************************************************************************************************************
+2022-08-18 10:20:36,899 p=204745 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unable to change directory before execution: [Errno 2] Нет такого файла или каталога: '/var/www/SGAR'
+
+2022-08-18 10:20:36,901 p=204745 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:20:36,912 p=204745 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-08-18 10:24:11,819 p=213176 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:24:11,819 p=213176 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:24:12,329 p=213176 u=anevdokimov n=ansible | ERROR! no module/action detected in task.
+
+The error appears to be in '/home/anevdokimov/Documents/GIT/ansible_sgar_service-1/roles/1sgar02/tasks/main.yml': line 51, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Создание директории /var/www/SGAR
+  ^ here
+
+2022-08-18 10:24:24,133 p=213301 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:24:24,134 p=213301 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:24:24,541 p=213301 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:24:24,619 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 10:24:25,938 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:25,944 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 10:24:26,005 p=213301 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:26,012 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 10:24:26,859 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:26,864 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 10:24:26,922 p=213301 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:26,928 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 10:24:27,602 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:27,607 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 10:24:27,665 p=213301 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:27,672 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 10:24:28,274 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:28,280 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 10:24:28,359 p=213301 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:28,366 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 10:24:29,009 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:29,016 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 10:24:30,119 p=213301 u=anevdokimov n=ansible | [WARNING]: Consider using the file module with state=directory rather than running 'mkdir'.  If you need to use command because file is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2022-08-18 10:24:30,119 p=213301 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:30,143 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:24:31,512 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:24:32,564 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:24:33,400 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:24:34,243 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:24:35,055 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:24:35,791 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:24:36,584 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:24:37,416 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 10:24:38,311 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:24:39,164 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:24:40,039 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:24:41,152 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:24:42,111 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:24:42,117 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:24:42,956 p=213301 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:42,962 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения gascalculate] ********************************************************************************************************************************************************
+2022-08-18 10:24:45,636 p=213301 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:45,642 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для gascalculate] **********************************************************************************************************************************************************
+2022-08-18 10:24:47,818 p=213301 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:24:47,826 p=213301 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для gascalculate] **********************************************************************************************************************************************************
+2022-08-18 10:25:12,181 p=213301 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install -r requirements.txt",
+    "delta": "0:00:23.664851",
+    "end": "2022-08-18 10:25:12.103380",
+    "rc": 1,
+    "start": "2022-08-18 10:24:48.438529"
+}
+
+STDOUT:
+
+Collecting numpy
+  Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.18.5
+Collecting cython
+  Downloading https://files.pythonhosted.org/packages/e6/10/1ed7e90b97cfb78f31e903a5ddbe45bb647133166af65c2490a1a9eb76de/Cython-0.29.32-cp35-cp35m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (2.0MB)
+Installing collected packages: cython
+Successfully installed cython-0.29.32
+Collecting Django==1.10.3 (from -r requirements.txt (line 1))
+  Downloading https://files.pythonhosted.org/packages/0e/ab/16abddb9ab7ee46a26e04a0c8ba1f02b9412a77927dec699c1af6d0070f8/Django-1.10.3-py2.py3-none-any.whl (6.8MB)
+Collecting psycopg2==2.7.7 (from -r requirements.txt (line 3))
+  Downloading https://files.pythonhosted.org/packages/e2/ed/1c022748aee0d93a6c123c0739990b0ab32744314bc0752511106613b021/psycopg2-2.7.7-cp35-cp35m-manylinux1_x86_64.whl (2.7MB)
+Collecting psycopg2-binary==2.7.7 (from -r requirements.txt (line 5))
+  Downloading https://files.pythonhosted.org/packages/6a/99/cc5d5963fe759d9bd2bed477d98862aef095fa7ecbbca85c091e8400b70d/psycopg2_binary-2.7.7-cp35-cp35m-manylinux1_x86_64.whl (2.7MB)
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+  Downloading https://files.pythonhosted.org/packages/85/90/817ece7cbd212ed0475bddc3249c96c561ae8bd7326f59b98df0f64a8c91/GDAL-2.0.0.tar.gz (518kB)
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Downloading https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Downloading https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+  Downloading https://files.pythonhosted.org/packages/23/84/323c2415280bc4fc880ac5050dddfb3c8062c2552b34c2e512eb4aa68f79/wrapt-1.11.2.tar.gz
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Downloading https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl (56kB)
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+  Downloading https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Downloading https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Downloading https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl (1.2MB)
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+  Downloading https://files.pythonhosted.org/packages/eb/ee/e59e74ecac678a14d6abefb9054f0bbcb318a6452a30df3776f133886d7d/googleapis-common-protos-1.6.0.tar.gz
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Downloading https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib==1.25.7 (from -r requirements.txt (line 27))
+
+
+STDERR:
+
+  Could not find a version that satisfies the requirement urllib==1.25.7 (from -r requirements.txt (line 27)) (from versions: )
+No matching distribution found for urllib==1.25.7 (from -r requirements.txt (line 27))
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:25:12,183 p=213301 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:25:12,186 p=213301 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=10   changed=3    unreachable=0    failed=1    skipped=4    rescued=0    ignored=0   
+2022-08-18 10:29:52,346 p=224939 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:29:52,346 p=224939 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:29:53,356 p=224939 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:29:53,405 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 10:29:54,757 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:54,764 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 10:29:54,831 p=224939 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:54,839 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 10:29:55,885 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:55,891 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 10:29:55,958 p=224939 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:55,965 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 10:29:57,175 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:57,181 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 10:29:57,300 p=224939 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:57,306 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 10:29:58,223 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:58,232 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 10:29:58,301 p=224939 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:58,309 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 10:29:58,995 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:59,001 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 10:29:59,085 p=224939 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:29:59,092 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:30:00,572 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:30:01,619 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:30:02,561 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:30:03,628 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:30:04,502 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:30:05,415 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:30:06,278 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:30:07,353 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 10:30:08,117 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:30:08,941 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:30:09,852 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:30:12,244 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:30:13,560 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:30:13,568 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:30:14,439 p=224939 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:30:14,446 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения gascalculate] ********************************************************************************************************************************************************
+2022-08-18 10:30:14,517 p=224939 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:30:14,527 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для gascalculate] **********************************************************************************************************************************************************
+2022-08-18 10:30:16,414 p=224939 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:30:16,423 p=224939 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для gascalculate] **********************************************************************************************************************************************************
+2022-08-18 10:30:36,666 p=224939 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install -r requirements.txt",
+    "delta": "0:00:19.052384",
+    "end": "2022-08-18 10:30:36.579293",
+    "rc": 1,
+    "start": "2022-08-18 10:30:17.526909"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Collecting Django==1.10.3 (from -r requirements.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/0e/ab/16abddb9ab7ee46a26e04a0c8ba1f02b9412a77927dec699c1af6d0070f8/Django-1.10.3-py2.py3-none-any.whl
+Collecting psycopg2==2.7.7 (from -r requirements.txt (line 3))
+  Using cached https://files.pythonhosted.org/packages/e2/ed/1c022748aee0d93a6c123c0739990b0ab32744314bc0752511106613b021/psycopg2-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting psycopg2-binary==2.7.7 (from -r requirements.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/6a/99/cc5d5963fe759d9bd2bed477d98862aef095fa7ecbbca85c091e8400b70d/psycopg2_binary-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/85/90/817ece7cbd212ed0475bddc3249c96c561ae8bd7326f59b98df0f64a8c91/GDAL-2.0.0.tar.gz
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+  Using cached https://files.pythonhosted.org/packages/23/84/323c2415280bc4fc880ac5050dddfb3c8062c2552b34c2e512eb4aa68f79/wrapt-1.11.2.tar.gz
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+  Using cached https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+  Using cached https://files.pythonhosted.org/packages/eb/ee/e59e74ecac678a14d6abefb9054f0bbcb318a6452a30df3776f133886d7d/googleapis-common-protos-1.6.0.tar.gz
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Downloading https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl (125kB)
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Downloading https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl (58kB)
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Downloading https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl (178kB)
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Downloading https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl (145kB)
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Downloading https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl (61kB)
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+  Downloading https://files.pythonhosted.org/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Downloading https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl (19.8MB)
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+  Downloading https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz (829kB)
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+  Downloading https://files.pythonhosted.org/packages/c7/11/345f3173809cea7f1a193bfbf02403fff250a3360e0e118a1630985e547d/dill-0.3.1.1.tar.gz (151kB)
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Downloading https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl (60kB)
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+  Downloading https://files.pythonhosted.org/packages/1a/53/9243c600e047bd4c3df9e69cfabc1e8004a82cac2e0c484580a78a94ba2a/absl-py-0.9.0.tar.gz (104kB)
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Downloading https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl (3.0MB)
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Downloading https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl (40kB)
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Downloading https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Downloading https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting zookeeper==1.3.2 (from -r requirements.txt (line 59))
+
+
+STDERR:
+
+  Ignoring typing: markers 'python_version < "3.5"' don't match your environment
+  Could not find a version that satisfies the requirement zookeeper==1.3.2 (from -r requirements.txt (line 59)) (from versions: 0.1.0, 0.1.1, 0.1.2, 0.2.0, 0.2.1, 0.3.0, 0.3.1)
+No matching distribution found for zookeeper==1.3.2 (from -r requirements.txt (line 59))
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:30:36,668 p=224939 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:30:36,668 p=224939 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=8    changed=1    unreachable=0    failed=1    skipped=6    rescued=0    ignored=0   
+2022-08-18 10:43:13,799 p=249510 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:43:13,800 p=249510 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:43:14,344 p=249510 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:43:14,394 p=249510 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:43:15,898 p=249510 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:43:15,904 p=249510 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения gascalculate] ********************************************************************************************************************************************************
+2022-08-18 10:43:15,968 p=249510 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:43:15,979 p=249510 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для gascalculate] **********************************************************************************************************************************************************
+2022-08-18 10:43:17,928 p=249510 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:43:17,934 p=249510 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для gascalculate] **********************************************************************************************************************************************************
+2022-08-18 10:43:58,107 p=249510 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install -r requirements.txt",
+    "delta": "0:00:39.289575",
+    "end": "2022-08-18 10:43:58.031419",
+    "rc": 1,
+    "start": "2022-08-18 10:43:18.741844"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Collecting Django==1.10.3 (from -r requirements.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/0e/ab/16abddb9ab7ee46a26e04a0c8ba1f02b9412a77927dec699c1af6d0070f8/Django-1.10.3-py2.py3-none-any.whl
+Collecting psycopg2==2.7.7 (from -r requirements.txt (line 3))
+  Using cached https://files.pythonhosted.org/packages/e2/ed/1c022748aee0d93a6c123c0739990b0ab32744314bc0752511106613b021/psycopg2-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting psycopg2-binary==2.7.7 (from -r requirements.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/6a/99/cc5d5963fe759d9bd2bed477d98862aef095fa7ecbbca85c091e8400b70d/psycopg2_binary-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/85/90/817ece7cbd212ed0475bddc3249c96c561ae8bd7326f59b98df0f64a8c91/GDAL-2.0.0.tar.gz
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+  Using cached https://files.pythonhosted.org/packages/23/84/323c2415280bc4fc880ac5050dddfb3c8062c2552b34c2e512eb4aa68f79/wrapt-1.11.2.tar.gz
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+  Using cached https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+  Using cached https://files.pythonhosted.org/packages/eb/ee/e59e74ecac678a14d6abefb9054f0bbcb318a6452a30df3776f133886d7d/googleapis-common-protos-1.6.0.tar.gz
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Using cached https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Using cached https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Using cached https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Using cached https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+  Using cached https://files.pythonhosted.org/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Using cached https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+  Using cached https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+  Using cached https://files.pythonhosted.org/packages/c7/11/345f3173809cea7f1a193bfbf02403fff250a3360e0e118a1630985e547d/dill-0.3.1.1.tar.gz
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+  Using cached https://files.pythonhosted.org/packages/1a/53/9243c600e047bd4c3df9e69cfabc1e8004a82cac2e0c484580a78a94ba2a/absl-py-0.9.0.tar.gz
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Using cached https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Using cached https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Using cached https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pytz==2021.3 (from -r requirements.txt (line 61))
+  Downloading https://files.pythonhosted.org/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl (503kB)
+Collecting tzlocal==2.1 (from -r requirements.txt (line 63))
+  Downloading https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting APScheduler==3.8.1 (from -r requirements.txt (line 65))
+  Downloading https://files.pythonhosted.org/packages/7b/bc/410764a2e30bd79df344475a1b0691f1fe3ab5385ad3f47f8dcc673babe5/APScheduler-3.8.1-py2.py3-none-any.whl (59kB)
+Collecting cython==0.29.4 (from -r requirements.txt (line 67))
+  Downloading https://files.pythonhosted.org/packages/1e/db/630ea2ba49a486c06064f5d9fcdacab3b0e651c9497b89990c87da95c4b7/Cython-0.29.4-cp35-cp35m-manylinux1_x86_64.whl (2.0MB)
+Collecting cftime==1.5.1 (from -r requirements.txt (line 69))
+  Downloading https://files.pythonhosted.org/packages/8e/0a/89df2ae91ec6f95f5295f826058eb6a5108cf6e968bdcf61d821d6ad764b/cftime-1.5.1.tar.gz (46kB)
+Collecting netCDF4==1.5.7 (from -r requirements.txt (line 71))
+  Downloading https://files.pythonhosted.org/packages/df/e7/0eb5a6788502f0a1843f6b45a273c786a52d80c88003ce3d135a8c6da1bf/netCDF4-1.5.7.tar.gz (763kB)
+Collecting pycparser==2.17 (from -r requirements.txt (line 73))
+  Downloading https://files.pythonhosted.org/packages/be/64/1bb257ffb17d01f4a38d7ce686809a736837ad4371bcc5c42ba7a715c3ac/pycparser-2.17.tar.gz (231kB)
+Collecting cffi==1.9.1 (from -r requirements.txt (line 75))
+  Downloading https://files.pythonhosted.org/packages/96/05/04379df69e617fffdbfcf0c9b3a14dfc5440fb1dd622587279638fab8a24/cffi-1.9.1-cp35-cp35m-manylinux1_x86_64.whl (398kB)
+Collecting asn1crypto==0.22.0 (from -r requirements.txt (line 77))
+  Downloading https://files.pythonhosted.org/packages/97/ba/7e8117d8efcee589f4d96dd2b2eb1d997f96d27d214cf2b7134ad8acf6ab/asn1crypto-0.22.0-py2.py3-none-any.whl (97kB)
+Collecting cryptography==2.2.2 (from -r requirements.txt (line 79))
+  Downloading https://files.pythonhosted.org/packages/fa/f4/3cde3604972dfa2b0fea85b9711948bb4fb70ab64095322aef35071bd254/cryptography-2.2.2-cp34-abi3-manylinux1_x86_64.whl (2.2MB)
+Collecting pycrypto==2.6.1 (from -r requirements.txt (line 81))
+  Downloading https://files.pythonhosted.org/packages/60/db/645aa9af249f059cc3a368b118de33889219e0362141e75d4eaf6f80f163/pycrypto-2.6.1.tar.gz (446kB)
+Collecting jwt==0.3.2 (from -r requirements.txt (line 83))
+  Downloading https://files.pythonhosted.org/packages/b0/f2/c82b50709a4caf2720441a1ee2f9ae4bb8264ab12f182638816885b57c4f/jwt-0.3.2.tar.gz
+Collecting Pillow==5.4.1 (from -r requirements.txt (line 85))
+  Downloading https://files.pythonhosted.org/packages/8b/e9/5c47710fe383f0582da668302a80a6355fe15c2ce2dde89b50fe34acefa6/Pillow-5.4.1-cp35-cp35m-manylinux1_x86_64.whl (2.0MB)
+Requirement already satisfied: setuptools in ./venv/lib/python3.5/site-packages (from protobuf==3.9.2->-r requirements.txt (line 21))
+Building wheels for collected packages: GDAL, wrapt, termcolor, googleapis-common-protos, promise, future, dill, absl-py, cftime, netCDF4, pycparser, pycrypto, jwt
+  Running setup.py bdist_wheel for GDAL: started
+  Running setup.py bdist_wheel for GDAL: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmphwj5am7ypip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for GDAL
+  Running setup.py bdist_wheel for wrapt: started
+  Running setup.py bdist_wheel for wrapt: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/wrapt/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpbp6q2_fypip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for wrapt
+  Running setup.py bdist_wheel for termcolor: started
+  Running setup.py bdist_wheel for termcolor: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/termcolor/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpkbr2cey1pip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for termcolor
+  Running setup.py bdist_wheel for googleapis-common-protos: started
+  Running setup.py bdist_wheel for googleapis-common-protos: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/googleapis-common-protos/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpzqa8pev0pip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for googleapis-common-protos
+  Running setup.py bdist_wheel for promise: started
+  Running setup.py bdist_wheel for promise: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/promise/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpamek8qp7pip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for promise
+  Running setup.py bdist_wheel for future: started
+  Running setup.py bdist_wheel for future: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/future/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpa0ec_0rnpip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for future
+  Running setup.py bdist_wheel for dill: started
+  Running setup.py bdist_wheel for dill: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/dill/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpylwmbs9qpip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for dill
+  Running setup.py bdist_wheel for absl-py: started
+  Running setup.py bdist_wheel for absl-py: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/absl-py/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmp8awwq177pip-wheel- --python-tag cp35:
+  /usr/lib/python3.5/distutils/dist.py:261: UserWarning: Unknown distribution option: 'long_description_content_type'
+    warnings.warn(msg)
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for absl-py
+  Running setup.py bdist_wheel for cftime: started
+  Running setup.py bdist_wheel for cftime: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/cftime/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpfirdje14pip-wheel- --python-tag cp35:
+  /usr/lib/python3.5/distutils/dist.py:261: UserWarning: Unknown distribution option: 'long_description_content_type'
+    warnings.warn(msg)
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for cftime
+  Running setup.py bdist_wheel for netCDF4: started
+  Running setup.py bdist_wheel for netCDF4: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/netCDF4/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmp32_ls693pip-wheel- --python-tag cp35:
+  reading from setup.cfg...
+  using nc-config...
+  checking /usr/include ...
+  hdf5 headers not found in /usr/include
+  checking /usr/include/hdf5/serial ...
+  HDF5 library version: 1.10.0-patch1 headers found in /usr/include/hdf5/serial
+  using netcdf library version b'4.4.1.1'
+  using Cython to compile netCDF4.pyx...
+  netcdf lib has group rename capability
+  netcdf lib has nc_inq_path function
+  netcdf lib has nc_inq_format_extended function
+  netcdf lib has nc_open_mem function
+  netcdf lib does not have nc_create_mem function
+  netcdf lib has cdf-5 format capability
+  netcdf lib does not have netcdf4 parallel functions
+  netcdf lib does not have pnetcdf parallel functions
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for netCDF4
+  Running setup.py bdist_wheel for pycparser: started
+  Running setup.py bdist_wheel for pycparser: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/pycparser/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpeiegk_0kpip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for pycparser
+  Running setup.py bdist_wheel for pycrypto: started
+  Running setup.py bdist_wheel for pycrypto: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/pycrypto/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmp_6t9xh5apip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for pycrypto
+  Running setup.py bdist_wheel for jwt: started
+  Running setup.py bdist_wheel for jwt: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/jwt/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmp9mq_s5wrpip-wheel- --python-tag cp35:
+  usage: -c [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: -c --help [cmd1 cmd2 ...]
+     or: -c --help-commands
+     or: -c cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  
+  ----------------------------------------
+  Running setup.py clean for jwt
+Failed to build GDAL wrapt termcolor googleapis-common-protos promise future dill absl-py cftime netCDF4 pycparser pycrypto jwt
+Installing collected packages: Django, psycopg2, psycopg2-binary, GDAL, setuptools-scm, typeguard, wrapt, tqdm, termcolor, six, protobuf, googleapis-common-protos, tensorflow-metadata, urllib3, idna, chardet, certifi, requests, promise, numpy, future, dill, attrs, absl-py, tensorflow-datasets, more-itertools, zipp, importlib-metadata, Click, pytz, tzlocal, APScheduler, cython, cftime, netCDF4, pycparser, cffi, asn1crypto, cryptography, pycrypto, jwt, Pillow
+  Running setup.py install for GDAL: started
+    Running setup.py install for GDAL: finished with status 'error'
+    Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-i2ocpwcb-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.5
+    copying gdal.py -> build/lib.linux-x86_64-3.5
+    copying ogr.py -> build/lib.linux-x86_64-3.5
+    copying osr.py -> build/lib.linux-x86_64-3.5
+    copying gdalconst.py -> build/lib.linux-x86_64-3.5
+    copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+    creating build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    running build_ext
+    building 'osgeo._gdal' extension
+    creating build/temp.linux-x86_64-3.5
+    creating build/temp.linux-x86_64-3.5/extensions
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+     #include "cpl_port.h"
+                          ^
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+
+
+STDERR:
+
+  Ignoring typing: markers 'python_version < "3.5"' don't match your environment
+  Failed building wheel for GDAL
+  Failed building wheel for wrapt
+  Failed building wheel for termcolor
+  Failed building wheel for googleapis-common-protos
+  Failed building wheel for promise
+  Failed building wheel for future
+  Failed building wheel for dill
+  Failed building wheel for absl-py
+  Failed building wheel for cftime
+  Failed building wheel for netCDF4
+  Failed building wheel for pycparser
+  Failed building wheel for pycrypto
+  Failed building wheel for jwt
+Command "/var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-8ve4jv34/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-i2ocpwcb-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL" failed with error code 1 in /tmp/pip-build-8ve4jv34/GDAL/
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:43:58,109 p=249510 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:43:58,131 p=249510 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=2    changed=1    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2022-08-18 10:47:05,545 p=257687 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:47:05,545 p=257687 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:47:06,051 p=257687 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:47:06,101 p=257687 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:47:07,673 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:47:08,702 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:47:09,482 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:47:10,404 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:47:13,055 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:47:14,090 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:47:15,007 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:47:15,774 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 10:47:16,636 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:47:17,384 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:47:18,258 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:47:19,033 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:47:19,835 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:47:20,676 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 10:47:23,384 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 10:47:23,390 p=257687 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:47:24,538 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:47:24,544 p=257687 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения SGAR] ****************************************************************************************************************************************************************
+2022-08-18 10:47:24,608 p=257687 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:47:24,614 p=257687 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:47:27,011 p=257687 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:47:27,018 p=257687 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:47:32,309 p=257687 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install bdist_wheel && pip3 install -r requirements.txt",
+    "delta": "0:00:03.980483",
+    "end": "2022-08-18 10:47:32.244813",
+    "rc": 1,
+    "start": "2022-08-18 10:47:28.264330"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Collecting bdist_wheel
+
+
+STDERR:
+
+  Could not find a version that satisfies the requirement bdist_wheel (from versions: )
+No matching distribution found for bdist_wheel
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:47:32,310 p=257687 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:47:32,317 p=257687 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2022-08-18 10:48:35,620 p=258210 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:48:35,621 p=258210 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:48:36,204 p=258210 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:48:36,238 p=258210 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:48:37,571 p=258210 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:48:37,577 p=258210 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения SGAR] ****************************************************************************************************************************************************************
+2022-08-18 10:48:37,632 p=258210 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:48:37,639 p=258210 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:48:40,073 p=258210 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:48:40,078 p=258210 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:50:10,860 p=258210 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install wheel && pip3 install -r requirements.txt",
+    "delta": "0:01:29.528545",
+    "end": "2022-08-18 10:50:10.736108",
+    "rc": 1,
+    "start": "2022-08-18 10:48:41.207563"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Collecting wheel
+  Downloading https://files.pythonhosted.org/packages/27/d6/003e593296a85fd6ed616ed962795b2f87709c3eee2bca4f6d0fe55c6d00/wheel-0.37.1-py2.py3-none-any.whl
+Installing collected packages: wheel
+Successfully installed wheel-0.37.1
+Requirement already satisfied: Django==1.10.3 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: psycopg2==2.7.7 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied: psycopg2-binary==2.7.7 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 5))
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/85/90/817ece7cbd212ed0475bddc3249c96c561ae8bd7326f59b98df0f64a8c91/GDAL-2.0.0.tar.gz
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+  Using cached https://files.pythonhosted.org/packages/23/84/323c2415280bc4fc880ac5050dddfb3c8062c2552b34c2e512eb4aa68f79/wrapt-1.11.2.tar.gz
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+  Using cached https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+  Using cached https://files.pythonhosted.org/packages/eb/ee/e59e74ecac678a14d6abefb9054f0bbcb318a6452a30df3776f133886d7d/googleapis-common-protos-1.6.0.tar.gz
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Using cached https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Using cached https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Using cached https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Using cached https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+  Using cached https://files.pythonhosted.org/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Using cached https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+  Using cached https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/future-0.18.2.tar.gz
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+  Using cached https://files.pythonhosted.org/packages/c7/11/345f3173809cea7f1a193bfbf02403fff250a3360e0e118a1630985e547d/dill-0.3.1.1.tar.gz
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+  Using cached https://files.pythonhosted.org/packages/1a/53/9243c600e047bd4c3df9e69cfabc1e8004a82cac2e0c484580a78a94ba2a/absl-py-0.9.0.tar.gz
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Using cached https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Using cached https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Using cached https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pytz==2021.3 (from -r requirements.txt (line 61))
+  Using cached https://files.pythonhosted.org/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl
+Collecting tzlocal==2.1 (from -r requirements.txt (line 63))
+  Using cached https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting APScheduler==3.8.1 (from -r requirements.txt (line 65))
+  Using cached https://files.pythonhosted.org/packages/7b/bc/410764a2e30bd79df344475a1b0691f1fe3ab5385ad3f47f8dcc673babe5/APScheduler-3.8.1-py2.py3-none-any.whl
+Collecting cython==0.29.4 (from -r requirements.txt (line 67))
+  Using cached https://files.pythonhosted.org/packages/1e/db/630ea2ba49a486c06064f5d9fcdacab3b0e651c9497b89990c87da95c4b7/Cython-0.29.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting cftime==1.5.1 (from -r requirements.txt (line 69))
+  Using cached https://files.pythonhosted.org/packages/8e/0a/89df2ae91ec6f95f5295f826058eb6a5108cf6e968bdcf61d821d6ad764b/cftime-1.5.1.tar.gz
+Collecting netCDF4==1.5.7 (from -r requirements.txt (line 71))
+  Using cached https://files.pythonhosted.org/packages/df/e7/0eb5a6788502f0a1843f6b45a273c786a52d80c88003ce3d135a8c6da1bf/netCDF4-1.5.7.tar.gz
+Collecting pycparser==2.17 (from -r requirements.txt (line 73))
+  Using cached https://files.pythonhosted.org/packages/be/64/1bb257ffb17d01f4a38d7ce686809a736837ad4371bcc5c42ba7a715c3ac/pycparser-2.17.tar.gz
+Collecting cffi==1.9.1 (from -r requirements.txt (line 75))
+  Using cached https://files.pythonhosted.org/packages/96/05/04379df69e617fffdbfcf0c9b3a14dfc5440fb1dd622587279638fab8a24/cffi-1.9.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting asn1crypto==0.22.0 (from -r requirements.txt (line 77))
+  Using cached https://files.pythonhosted.org/packages/97/ba/7e8117d8efcee589f4d96dd2b2eb1d997f96d27d214cf2b7134ad8acf6ab/asn1crypto-0.22.0-py2.py3-none-any.whl
+Collecting cryptography==2.2.2 (from -r requirements.txt (line 79))
+  Using cached https://files.pythonhosted.org/packages/fa/f4/3cde3604972dfa2b0fea85b9711948bb4fb70ab64095322aef35071bd254/cryptography-2.2.2-cp34-abi3-manylinux1_x86_64.whl
+Collecting pycrypto==2.6.1 (from -r requirements.txt (line 81))
+  Using cached https://files.pythonhosted.org/packages/60/db/645aa9af249f059cc3a368b118de33889219e0362141e75d4eaf6f80f163/pycrypto-2.6.1.tar.gz
+Collecting jwt==0.3.2 (from -r requirements.txt (line 83))
+  Using cached https://files.pythonhosted.org/packages/b0/f2/c82b50709a4caf2720441a1ee2f9ae4bb8264ab12f182638816885b57c4f/jwt-0.3.2.tar.gz
+Collecting Pillow==5.4.1 (from -r requirements.txt (line 85))
+  Using cached https://files.pythonhosted.org/packages/8b/e9/5c47710fe383f0582da668302a80a6355fe15c2ce2dde89b50fe34acefa6/Pillow-5.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: setuptools in ./venv/lib/python3.5/site-packages (from protobuf==3.9.2->-r requirements.txt (line 21))
+Building wheels for collected packages: GDAL, wrapt, termcolor, googleapis-common-protos, promise, future, dill, absl-py, cftime, netCDF4, pycparser, pycrypto, jwt
+  Running setup.py bdist_wheel for GDAL: started
+  Running setup.py bdist_wheel for GDAL: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-74973o2q/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpki5o_vhppip-wheel- --python-tag cp35:
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.5
+  copying gdal.py -> build/lib.linux-x86_64-3.5
+  copying ogr.py -> build/lib.linux-x86_64-3.5
+  copying osr.py -> build/lib.linux-x86_64-3.5
+  copying gdalconst.py -> build/lib.linux-x86_64-3.5
+  copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+  creating build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+  Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+  Skipping optional fixer: ws_comma
+  Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+  Skipping optional fixer: ws_comma
+  running build_ext
+  building 'osgeo._gdal' extension
+  creating build/temp.linux-x86_64-3.5
+  creating build/temp.linux-x86_64-3.5/extensions
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+  cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+  extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+   #include "cpl_port.h"
+                        ^
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Running setup.py clean for GDAL
+  Running setup.py bdist_wheel for wrapt: started
+  Running setup.py bdist_wheel for wrapt: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/d7/de/2e/efa132238792efb6459a96e85916ef8597fcb3d2ae51590dfd
+  Running setup.py bdist_wheel for termcolor: started
+  Running setup.py bdist_wheel for termcolor: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/7c/06/54/bc84598ba1daf8f970247f550b175aaaee85f68b4b0c5ab2c6
+  Running setup.py bdist_wheel for googleapis-common-protos: started
+  Running setup.py bdist_wheel for googleapis-common-protos: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/9e/3d/a2/1bec8bb7db80ab3216dbc33092bb7ccd0debfb8ba42b5668d5
+  Running setup.py bdist_wheel for promise: started
+  Running setup.py bdist_wheel for promise: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/19/49/34/c3c1e78bcb954c49e5ec0d31784fe63d14d427f316b12fbde9
+  Running setup.py bdist_wheel for future: started
+  Running setup.py bdist_wheel for future: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/8b/99/a0/81daf51dcd359a9377b110a8a886b3895921802d2fc1b2397e
+  Running setup.py bdist_wheel for dill: started
+  Running setup.py bdist_wheel for dill: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/59/b1/91/f02e76c732915c4015ab4010f3015469866c1eb9b14058d8e7
+  Running setup.py bdist_wheel for absl-py: started
+  Running setup.py bdist_wheel for absl-py: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/8e/28/49/fad4e7f0b9a1227708cbbee4487ac8558a7334849cb81c813d
+  Running setup.py bdist_wheel for cftime: started
+  Running setup.py bdist_wheel for cftime: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/47/c8/d6/6216fcc61a1616d257a9c79f92623bf900e59c9d0b57fe5fa8
+  Running setup.py bdist_wheel for netCDF4: started
+  Running setup.py bdist_wheel for netCDF4: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/0a/42/4c/1219f3ed22c86259b87e78bd2754551aa7d3a4068996573e4d
+  Running setup.py bdist_wheel for pycparser: started
+  Running setup.py bdist_wheel for pycparser: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/3f/a9/a7/44a27bb67d962845df8df4ac988e1f369184e307392ce37c5b
+  Running setup.py bdist_wheel for pycrypto: started
+  Running setup.py bdist_wheel for pycrypto: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/27/02/5e/77a69d0c16bb63c6ed32f5386f33a2809c94bd5414a2f6c196
+  Running setup.py bdist_wheel for jwt: started
+  Running setup.py bdist_wheel for jwt: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/96/fd/34/61647ec2b82ab3eefaa8acc692a4575c5c4e14a6030e452f00
+Successfully built wrapt termcolor googleapis-common-protos promise future dill absl-py cftime netCDF4 pycparser pycrypto jwt
+Failed to build GDAL
+Installing collected packages: GDAL, setuptools-scm, typeguard, wrapt, tqdm, termcolor, six, protobuf, googleapis-common-protos, tensorflow-metadata, urllib3, idna, chardet, certifi, requests, promise, numpy, future, dill, attrs, absl-py, tensorflow-datasets, more-itertools, zipp, importlib-metadata, Click, pytz, tzlocal, APScheduler, cython, cftime, netCDF4, pycparser, cffi, asn1crypto, cryptography, pycrypto, jwt, Pillow
+  Running setup.py install for GDAL: started
+    Running setup.py install for GDAL: finished with status 'error'
+    Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-74973o2q/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-_3knff00-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.5
+    copying gdal.py -> build/lib.linux-x86_64-3.5
+    copying ogr.py -> build/lib.linux-x86_64-3.5
+    copying osr.py -> build/lib.linux-x86_64-3.5
+    copying gdalconst.py -> build/lib.linux-x86_64-3.5
+    copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+    creating build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    running build_ext
+    building 'osgeo._gdal' extension
+    creating build/temp.linux-x86_64-3.5
+    creating build/temp.linux-x86_64-3.5/extensions
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+     #include "cpl_port.h"
+                          ^
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+
+
+STDERR:
+
+  Ignoring typing: markers 'python_version < "3.5"' don't match your environment
+  Failed building wheel for GDAL
+Command "/var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-74973o2q/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-_3knff00-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL" failed with error code 1 in /tmp/pip-build-74973o2q/GDAL/
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:50:10,872 p=258210 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:50:10,872 p=258210 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=2    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2022-08-18 10:53:34,881 p=266508 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:53:34,882 p=266508 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:53:35,479 p=266508 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:53:35,550 p=266508 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:53:37,243 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:53:38,512 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:53:39,376 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:53:40,271 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:53:41,370 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:53:42,259 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:53:43,014 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:53:43,838 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-dev)
+2022-08-18 10:53:44,650 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:53:45,378 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:53:46,113 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:53:47,031 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:53:47,996 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:53:48,714 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 10:53:49,521 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 10:53:51,697 p=266508 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 10:53:51,707 p=266508 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:53:52,784 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:53:52,790 p=266508 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения SGAR] ****************************************************************************************************************************************************************
+2022-08-18 10:53:52,874 p=266508 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:53:52,883 p=266508 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:53:54,912 p=266508 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:53:54,918 p=266508 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:54:18,607 p=266508 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install wheel && pip3 install -r requirements.txt",
+    "delta": "0:00:22.688475",
+    "end": "2022-08-18 10:54:18.525861",
+    "rc": 1,
+    "start": "2022-08-18 10:53:55.837386"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: wheel in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: Django==1.10.3 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: psycopg2==2.7.7 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied: psycopg2-binary==2.7.7 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 5))
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/85/90/817ece7cbd212ed0475bddc3249c96c561ae8bd7326f59b98df0f64a8c91/GDAL-2.0.0.tar.gz
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Using cached https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Using cached https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Using cached https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Using cached https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Using cached https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Using cached https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Using cached https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Using cached https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pytz==2021.3 (from -r requirements.txt (line 61))
+  Using cached https://files.pythonhosted.org/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl
+Collecting tzlocal==2.1 (from -r requirements.txt (line 63))
+  Using cached https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting APScheduler==3.8.1 (from -r requirements.txt (line 65))
+  Using cached https://files.pythonhosted.org/packages/7b/bc/410764a2e30bd79df344475a1b0691f1fe3ab5385ad3f47f8dcc673babe5/APScheduler-3.8.1-py2.py3-none-any.whl
+Collecting cython==0.29.4 (from -r requirements.txt (line 67))
+  Using cached https://files.pythonhosted.org/packages/1e/db/630ea2ba49a486c06064f5d9fcdacab3b0e651c9497b89990c87da95c4b7/Cython-0.29.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting cftime==1.5.1 (from -r requirements.txt (line 69))
+Collecting netCDF4==1.5.7 (from -r requirements.txt (line 71))
+Collecting pycparser==2.17 (from -r requirements.txt (line 73))
+Collecting cffi==1.9.1 (from -r requirements.txt (line 75))
+  Using cached https://files.pythonhosted.org/packages/96/05/04379df69e617fffdbfcf0c9b3a14dfc5440fb1dd622587279638fab8a24/cffi-1.9.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting asn1crypto==0.22.0 (from -r requirements.txt (line 77))
+  Using cached https://files.pythonhosted.org/packages/97/ba/7e8117d8efcee589f4d96dd2b2eb1d997f96d27d214cf2b7134ad8acf6ab/asn1crypto-0.22.0-py2.py3-none-any.whl
+Collecting cryptography==2.2.2 (from -r requirements.txt (line 79))
+  Using cached https://files.pythonhosted.org/packages/fa/f4/3cde3604972dfa2b0fea85b9711948bb4fb70ab64095322aef35071bd254/cryptography-2.2.2-cp34-abi3-manylinux1_x86_64.whl
+Collecting pycrypto==2.6.1 (from -r requirements.txt (line 81))
+Collecting jwt==0.3.2 (from -r requirements.txt (line 83))
+Collecting Pillow==5.4.1 (from -r requirements.txt (line 85))
+  Using cached https://files.pythonhosted.org/packages/8b/e9/5c47710fe383f0582da668302a80a6355fe15c2ce2dde89b50fe34acefa6/Pillow-5.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: setuptools in ./venv/lib/python3.5/site-packages (from protobuf==3.9.2->-r requirements.txt (line 21))
+Collecting typing>=3.6.4 (from promise==2.3->-r requirements.txt (line 37))
+  Downloading https://files.pythonhosted.org/packages/05/d9/6eebe19d46bd05360c9a9aae822e67a80f9242aabbfc58b641b957546607/typing-3.7.4.3.tar.gz (78kB)
+Building wheels for collected packages: GDAL, typing
+  Running setup.py bdist_wheel for GDAL: started
+  Running setup.py bdist_wheel for GDAL: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-g5sbhxe5/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpwrgxu5ikpip-wheel- --python-tag cp35:
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.5
+  copying gdal.py -> build/lib.linux-x86_64-3.5
+  copying ogr.py -> build/lib.linux-x86_64-3.5
+  copying osr.py -> build/lib.linux-x86_64-3.5
+  copying gdalconst.py -> build/lib.linux-x86_64-3.5
+  copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+  creating build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+  Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+  Skipping optional fixer: ws_comma
+  Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+  Skipping optional fixer: ws_comma
+  running build_ext
+  building 'osgeo._gdal' extension
+  creating build/temp.linux-x86_64-3.5
+  creating build/temp.linux-x86_64-3.5/extensions
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+  cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+  extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+   #include "cpl_port.h"
+                        ^
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Running setup.py clean for GDAL
+  Running setup.py bdist_wheel for typing: started
+  Running setup.py bdist_wheel for typing: finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/2d/04/41/8e1836e79581989c22eebac3f4e70aaac9af07b0908da173be
+Successfully built typing
+Failed to build GDAL
+Installing collected packages: GDAL, setuptools-scm, typeguard, wrapt, tqdm, termcolor, six, protobuf, googleapis-common-protos, tensorflow-metadata, urllib3, idna, chardet, certifi, requests, typing, promise, numpy, future, dill, attrs, absl-py, tensorflow-datasets, more-itertools, zipp, importlib-metadata, Click, pytz, tzlocal, APScheduler, cython, cftime, netCDF4, pycparser, cffi, asn1crypto, cryptography, pycrypto, jwt, Pillow
+  Running setup.py install for GDAL: started
+    Running setup.py install for GDAL: finished with status 'error'
+    Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-g5sbhxe5/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-sogukae7-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.5
+    copying gdal.py -> build/lib.linux-x86_64-3.5
+    copying ogr.py -> build/lib.linux-x86_64-3.5
+    copying osr.py -> build/lib.linux-x86_64-3.5
+    copying gdalconst.py -> build/lib.linux-x86_64-3.5
+    copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+    creating build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    running build_ext
+    building 'osgeo._gdal' extension
+    creating build/temp.linux-x86_64-3.5
+    creating build/temp.linux-x86_64-3.5/extensions
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+     #include "cpl_port.h"
+                          ^
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+
+
+STDERR:
+
+  Failed building wheel for GDAL
+Command "/var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-g5sbhxe5/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-sogukae7-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL" failed with error code 1 in /tmp/pip-build-g5sbhxe5/GDAL/
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:54:18,609 p=266508 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:54:18,618 p=266508 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=3    changed=1    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2022-08-18 10:55:03,103 p=267067 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:55:03,103 p=267067 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:55:03,696 p=267067 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:55:03,738 p=267067 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:55:05,174 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:55:06,202 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:55:07,105 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:55:07,969 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:55:08,968 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:55:09,884 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:55:10,725 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:55:11,757 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 10:55:12,597 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:55:13,397 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:55:14,180 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:55:14,980 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:55:15,740 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:55:16,460 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 10:55:17,187 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 10:55:18,008 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 10:55:18,016 p=267067 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:55:19,064 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:55:19,071 p=267067 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения SGAR] ****************************************************************************************************************************************************************
+2022-08-18 10:55:19,163 p=267067 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:55:19,171 p=267067 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:55:21,224 p=267067 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:55:21,231 p=267067 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:55:42,093 p=267067 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && pip3 install wheel && pip3 install -r requirements.txt",
+    "delta": "0:00:19.539178",
+    "end": "2022-08-18 10:55:42.022242",
+    "rc": 1,
+    "start": "2022-08-18 10:55:22.483064"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: wheel in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: Django==1.10.3 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: psycopg2==2.7.7 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied: psycopg2-binary==2.7.7 in ./venv/lib/python3.5/site-packages (from -r requirements.txt (line 5))
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+  Using cached https://files.pythonhosted.org/packages/85/90/817ece7cbd212ed0475bddc3249c96c561ae8bd7326f59b98df0f64a8c91/GDAL-2.0.0.tar.gz
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Using cached https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Using cached https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Using cached https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Using cached https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Using cached https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Using cached https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Using cached https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Using cached https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pytz==2021.3 (from -r requirements.txt (line 61))
+  Using cached https://files.pythonhosted.org/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl
+Collecting tzlocal==2.1 (from -r requirements.txt (line 63))
+  Using cached https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting APScheduler==3.8.1 (from -r requirements.txt (line 65))
+  Using cached https://files.pythonhosted.org/packages/7b/bc/410764a2e30bd79df344475a1b0691f1fe3ab5385ad3f47f8dcc673babe5/APScheduler-3.8.1-py2.py3-none-any.whl
+Collecting cython==0.29.4 (from -r requirements.txt (line 67))
+  Using cached https://files.pythonhosted.org/packages/1e/db/630ea2ba49a486c06064f5d9fcdacab3b0e651c9497b89990c87da95c4b7/Cython-0.29.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting cftime==1.5.1 (from -r requirements.txt (line 69))
+Collecting netCDF4==1.5.7 (from -r requirements.txt (line 71))
+Collecting pycparser==2.17 (from -r requirements.txt (line 73))
+Collecting cffi==1.9.1 (from -r requirements.txt (line 75))
+  Using cached https://files.pythonhosted.org/packages/96/05/04379df69e617fffdbfcf0c9b3a14dfc5440fb1dd622587279638fab8a24/cffi-1.9.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting asn1crypto==0.22.0 (from -r requirements.txt (line 77))
+  Using cached https://files.pythonhosted.org/packages/97/ba/7e8117d8efcee589f4d96dd2b2eb1d997f96d27d214cf2b7134ad8acf6ab/asn1crypto-0.22.0-py2.py3-none-any.whl
+Collecting cryptography==2.2.2 (from -r requirements.txt (line 79))
+  Using cached https://files.pythonhosted.org/packages/fa/f4/3cde3604972dfa2b0fea85b9711948bb4fb70ab64095322aef35071bd254/cryptography-2.2.2-cp34-abi3-manylinux1_x86_64.whl
+Collecting pycrypto==2.6.1 (from -r requirements.txt (line 81))
+Collecting jwt==0.3.2 (from -r requirements.txt (line 83))
+Collecting Pillow==5.4.1 (from -r requirements.txt (line 85))
+  Using cached https://files.pythonhosted.org/packages/8b/e9/5c47710fe383f0582da668302a80a6355fe15c2ce2dde89b50fe34acefa6/Pillow-5.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Requirement already satisfied: setuptools in ./venv/lib/python3.5/site-packages (from protobuf==3.9.2->-r requirements.txt (line 21))
+Collecting typing>=3.6.4 (from promise==2.3->-r requirements.txt (line 37))
+Building wheels for collected packages: GDAL
+  Running setup.py bdist_wheel for GDAL: started
+  Running setup.py bdist_wheel for GDAL: finished with status 'error'
+  Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-icj0mni7/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" bdist_wheel -d /tmp/tmpnrltaseypip-wheel- --python-tag cp35:
+  running bdist_wheel
+  running build
+  running build_py
+  creating build
+  creating build/lib.linux-x86_64-3.5
+  copying gdal.py -> build/lib.linux-x86_64-3.5
+  copying ogr.py -> build/lib.linux-x86_64-3.5
+  copying osr.py -> build/lib.linux-x86_64-3.5
+  copying gdalconst.py -> build/lib.linux-x86_64-3.5
+  copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+  creating build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+  copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+  Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+  Skipping optional fixer: ws_comma
+  Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+  Skipping optional fixer: ws_comma
+  running build_ext
+  building 'osgeo._gdal' extension
+  creating build/temp.linux-x86_64-3.5
+  creating build/temp.linux-x86_64-3.5/extensions
+  x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+  cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+  extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+   #include "cpl_port.h"
+                        ^
+  compilation terminated.
+  error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+  
+  ----------------------------------------
+  Running setup.py clean for GDAL
+Failed to build GDAL
+Installing collected packages: GDAL, setuptools-scm, typeguard, wrapt, tqdm, termcolor, six, protobuf, googleapis-common-protos, tensorflow-metadata, urllib3, idna, chardet, certifi, requests, typing, promise, numpy, future, dill, attrs, absl-py, tensorflow-datasets, more-itertools, zipp, importlib-metadata, Click, pytz, tzlocal, APScheduler, cython, cftime, netCDF4, pycparser, cffi, asn1crypto, cryptography, pycrypto, jwt, Pillow
+  Running setup.py install for GDAL: started
+    Running setup.py install for GDAL: finished with status 'error'
+    Complete output from command /var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-icj0mni7/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-ugiz2yux-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.5
+    copying gdal.py -> build/lib.linux-x86_64-3.5
+    copying ogr.py -> build/lib.linux-x86_64-3.5
+    copying osr.py -> build/lib.linux-x86_64-3.5
+    copying gdalconst.py -> build/lib.linux-x86_64-3.5
+    copying gdalnumeric.py -> build/lib.linux-x86_64-3.5
+    creating build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/osr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/__init__.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/ogr.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalconst.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdal_array.py -> build/lib.linux-x86_64-3.5/osgeo
+    copying osgeo/gdalnumeric.py -> build/lib.linux-x86_64-3.5/osgeo
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    Fixing build/lib.linux-x86_64-3.5/gdal.py build/lib.linux-x86_64-3.5/ogr.py build/lib.linux-x86_64-3.5/osr.py build/lib.linux-x86_64-3.5/gdalconst.py build/lib.linux-x86_64-3.5/gdalnumeric.py build/lib.linux-x86_64-3.5/osgeo/osr.py build/lib.linux-x86_64-3.5/osgeo/__init__.py build/lib.linux-x86_64-3.5/osgeo/gdal.py build/lib.linux-x86_64-3.5/osgeo/ogr.py build/lib.linux-x86_64-3.5/osgeo/gdalconst.py build/lib.linux-x86_64-3.5/osgeo/gdal_array.py build/lib.linux-x86_64-3.5/osgeo/gdalnumeric.py
+    Skipping optional fixer: ws_comma
+    running build_ext
+    building 'osgeo._gdal' extension
+    creating build/temp.linux-x86_64-3.5
+    creating build/temp.linux-x86_64-3.5/extensions
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -fdebug-prefix-map=/opt/build-chroot/20181119/python3.5/python3.5-3.5.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I../../port -I../../gcore -I../../alg -I../../ogr/ -I/var/www/SGAR/venv/include -I/usr/include/python3.5m -I/var/www/SGAR/venv/lib/python3.5/site-packages/numpy/core/include -I/usr/include -c extensions/gdal_wrap.cpp -o build/temp.linux-x86_64-3.5/extensions/gdal_wrap.o
+    cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+    extensions/gdal_wrap.cpp:2859:22: fatal error: cpl_port.h: Нет такого файла или каталога
+     #include "cpl_port.h"
+                          ^
+    compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+
+
+STDERR:
+
+  Failed building wheel for GDAL
+Command "/var/www/SGAR/venv/bin/python3 -u -c "import setuptools, tokenize;__file__='/tmp/pip-build-icj0mni7/GDAL/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-ugiz2yux-record/install-record.txt --single-version-externally-managed --compile --install-headers /var/www/SGAR/venv/include/site/python3.5/GDAL" failed with error code 1 in /tmp/pip-build-icj0mni7/GDAL/
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 10:55:42,095 p=267067 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:55:42,145 p=267067 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2022-08-18 10:58:09,570 p=275525 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 10:58:09,570 p=275525 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 10:58:10,247 p=275525 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 10:58:10,298 p=275525 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 10:58:12,222 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 10:58:13,178 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 10:58:13,967 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 10:58:14,819 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 10:58:15,554 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 10:58:16,417 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 10:58:17,367 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 10:58:18,306 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 10:58:19,186 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 10:58:20,034 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 10:58:20,936 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 10:58:21,923 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 10:58:22,879 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 10:58:23,745 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 10:58:24,548 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 10:58:25,444 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 10:58:25,450 p=275525 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/venv exists] ************************************************************************************************************************************************************
+2022-08-18 10:58:26,620 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:58:26,628 p=275525 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения SGAR] ****************************************************************************************************************************************************************
+2022-08-18 10:58:26,727 p=275525 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:58:26,735 p=275525 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:58:28,902 p=275525 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:58:28,909 p=275525 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для SGAR] ******************************************************************************************************************************************************************
+2022-08-18 10:59:09,954 p=275525 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 10:59:09,956 p=275525 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 10:59:09,969 p=275525 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   

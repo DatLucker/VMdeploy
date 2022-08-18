@@ -1,93 +1,153 @@
 ---
+# - name: Check that the /var/www exists
+#   stat:
+#     path: /var/www
+#   register: stat_result_www
 
-- name: Check that the /var/www/html exists
-  stat:
-    path: /var/www/html
-  register: stat_result_html
+# - name: Создание директории /var/www
+#   shell: 
+#     cmd: mkdir www 
+#     chdir: /var
+#   when: not stat_result_www.stat.exists
 
-- name: Создание директории /var/www/html
-  shell: 
-    cmd: mkdir html 
-    chdir: /var/www/
-  when: not stat_result_html.stat.exists
+# - name: Check that the /var/www/html exists
+#   stat:
+#     path: /var/www/html
+#   register: stat_result_html
 
-- name: Check that the /var/www/static exists
-  stat:
-    path: /var/www/static
-  register: stat_result_static
+# - name: Создание директории /var/www/html
+#   shell: 
+#     cmd: mkdir html 
+#     chdir: /var/www/
+#   when: not stat_result_html.stat.exists
 
-- name: Создание директории /var/www/static
-  shell: 
-    cmd: mkdir static
-    chdir: /var/www/
-  when: not stat_result_static.stat.exists
+# - name: Check that the /var/www/static exists
+#   stat:
+#     path: /var/www/static
+#   register: stat_result_static
 
-- name: Check that the /var/www/media exists
-  stat:
-    path: /var/www/media
-  register: stat_result_media
+# - name: Создание директории /var/www/static
+#   shell: 
+#     cmd: mkdir static
+#     chdir: /var/www/
+#   when: not stat_result_static.stat.exists
 
-- name: Создание директории /var/www/media
-  shell: 
-    cmd: mkdir media
-    chdir: /var/www/
-  when: not stat_result_media.stat.exists
+# - name: Check that the /var/www/media exists
+#   stat:
+#     path: /var/www/media
+#   register: stat_result_media
 
-- name: Check that the /var/www/SGAR exists
-  stat:
-    path: /var/www/SGAR
-  register: stat_result_SGAR
+# - name: Создание директории /var/www/media
+#   shell: 
+#     cmd: mkdir media
+#     chdir: /var/www/
+#   when: not stat_result_media.stat.exists
 
-- name: Создание директории /var/www/SGAR
-  shell: 
-    cmd: mkdir SGARS
-    chdir: /var/www/
-  when: not stat_result_SGAR.stat.exists
+# - name: Check that the /var/www/SGAR exists
+#   stat:
+#     path: /var/www/SGAR
+#   register: stat_result_SGAR
+
+# - name: Создание директории /var/www/SGAR
+#   shell: 
+#     cmd: mkdir SGAR
+#     chdir: /var/www/
+#   when: not stat_result_SGAR.stat.exists
 
 - name: "Install packages"
   apt: 
     name: "{{ item }}"
   loop:
-    - postgresql
-    - postgresql-server
+    - postgresql-9.6
     - redis-server
+    - python-psycopg2
     - python3-psycopg2
-
-- name: "Find out if PostgreSQL is initialized"
-  ansible.builtin.stat:
-    path: "/var/lib/pgsql/data/pg_hba.conf"
-  register: postgres_data
-
-- name: block
-  become: yes
-  become_user: postgres
-  block:
-  - name: "Create app database"
-    postgresql_db:
-      state: present
-      name: "{{ db_name }}"
-
-  - name: Create db user
-    postgresql_user:
-      state: present
-      name: "{{ db_user }}"
-      password: "{{ db_password }}"
-
-  - name: Grant db user access to app db
-    postgresql_privs:
-      type: database
-      database: "{{ db_name }}"
-      roles: "{{ db_user }}"
-      grant_option: no
-      privs: all
-  when: not postgres_data.stat.exists
-
-- name: "Start and enable services"
-  service: "name={{ item }} state=started enabled=yes"
-  with_items:
-    - postgresql
+    - nodejs
+    - libgdal-dev
+    - libffi-dev
+    - python3.5-dev
+    - build-essential
+    - openssl 
+    - libssl-dev
+    - make 
+    - apache2
+    - git
+    - gcc=4:6.3.0-4
+    - autoconf
 
 
-  
 
+# - name: "Find out if PostgreSQL is initialized"
+#   ansible.builtin.stat:
+#     path: "/var/lib/pgsql/data/pg_hba.conf"
+#   register: postgres_data
+
+# - name: block
+#   become: true
+#   become_user: postgres
+#   block:
+#   - name: "Create app database"
+#     postgresql_db:
+#       state: present
+#       name: "{{ db_name }}"
+
+#   - name: Create db user
+#     postgresql_user:
+#       state: present
+#       name: "{{ db_user }}"
+#       password: "{{ db_password }}"
+
+#   - name: Правка файла /etc/postgresql.conf
+#     lineinfile:
+#       path: /etc/postgresql/9.6/main/postgresql.conf
+#       regexp: "listen_addresses = 'localhost'"
+#       line: "listen_addresses = '*'                  # what IP address(es) to listen on;"
+#       backup: yes
+
+#   - name: Grant db user access to app db
+#     postgresql_privs:
+#       type: database
+#       database: "{{ db_name }}"
+#       roles: "{{ db_user }}"
+#       grant_option: no
+#       privs: all
+#     when: not postgres_data.stat.exists
+
+# - name: Start and enable services
+#   service: 
+#     name: "{{ item }}"
+#     state: "started"
+#     enabled: "yes"
+#   with_items:
+#     - postgresql
+
+# - name: Установка redis.conf
+#   template:
+#     src: templates/redis.conf # required. Path of a Jinja2 formatted template on the Ansible controller. This can be a relative or an absolute path. The file must be encoded with C(utf-8) but I(output_encoding) can be used to control the encoding of the output template.
+#     dest: /etc/redis/redis.conf # required. Location to render the template to on the remote machine.
+#     backup: true
+#   notify: 
+#   - Restart redis
+
+- name: Check that the /var/www/SGAR/venv exists
+  stat:
+    path: /var/www/SGAR/venv
+  register: stat_result_venv
+
+- name: Создание виртуального окружения SGAR
+  shell: 
+    cmd: python3 -m venv ./venv
+    chdir: /var/www/SGAR
+  when: not stat_result_venv.stat.exists
+
+- name: Доставка requirements.txt для SGAR
+  template:
+    src: templates/requirements.txt
+    dest: /var/www/SGAR/requirements.txt
+    backup: yes
+
+- name: requirements.txt activate для SGAR
+  shell:
+    cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install wheel && pip3 install -r requirements.txt
+    chdir: /var/www/SGAR
 ...
