@@ -83,4 +83,6 @@ pycrypto==2.6.1
 jwt==0.3.2
 
 Pillow==5.4.1
+mod-wsgi-httpd
+mod_wsgi
 

@@ -11091,3 +11091,580 @@ removed in version 2.10. Deprecation warnings can be disabled by setting depreca
 2022-08-18 10:59:09,954 p=275525 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
 2022-08-18 10:59:09,956 p=275525 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
 2022-08-18 10:59:09,969 p=275525 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=4    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-08-18 12:42:49,969 p=461836 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 12:42:49,970 p=461836 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 12:42:50,460 p=461836 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 12:42:50,577 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 12:42:51,627 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:51,633 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 12:42:51,692 p=461836 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:51,698 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 12:42:52,364 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:52,370 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 12:42:52,430 p=461836 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:52,436 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 12:42:53,067 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:53,072 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 12:42:53,124 p=461836 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:53,131 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 12:42:53,690 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:53,696 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 12:42:53,758 p=461836 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:53,763 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 12:42:54,268 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:54,274 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 12:42:54,970 p=461836 u=anevdokimov n=ansible | [WARNING]: Consider using the file module with state=directory rather than running 'mkdir'.  If you need to use command because file is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2022-08-18 12:42:54,970 p=461836 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:42:54,978 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 12:42:55,968 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 12:42:56,719 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 12:42:57,394 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 12:42:58,030 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 12:42:58,628 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 12:42:59,319 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 12:43:00,092 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 12:43:00,811 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 12:43:01,375 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 12:43:02,042 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 12:43:02,723 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 12:43:03,703 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 12:43:04,533 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 12:43:05,178 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 12:43:05,841 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 12:43:06,435 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 12:43:06,442 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/api_sgar/venv exists] ********************************************************************************************************************************************************
+2022-08-18 12:43:07,151 p=461836 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:43:07,157 p=461836 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения api_sgar] ************************************************************************************************************************************************************
+2022-08-18 12:43:07,773 p=461836 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unable to change directory before execution: [Errno 2] Нет такого файла или каталога: '/var/www/api_sgar'
+
+2022-08-18 12:43:07,774 p=461836 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 12:43:07,776 p=461836 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=8    changed=1    unreachable=0    failed=1    skipped=4    rescued=0    ignored=0   
+2022-08-18 12:48:03,888 p=470466 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 12:48:03,890 p=470466 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 12:48:04,557 p=470466 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 12:48:04,604 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 12:48:05,734 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:05,742 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 12:48:05,804 p=470466 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:05,811 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 12:48:06,468 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:06,477 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 12:48:06,538 p=470466 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:06,544 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 12:48:07,077 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:07,083 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 12:48:07,141 p=470466 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:07,147 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 12:48:07,723 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:07,729 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 12:48:07,811 p=470466 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:07,817 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 12:48:08,491 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:08,497 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 12:48:08,556 p=470466 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:08,562 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 12:48:09,840 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 12:48:10,860 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 12:48:11,691 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 12:48:12,547 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 12:48:13,555 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 12:48:14,371 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 12:48:15,284 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 12:48:16,151 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 12:48:17,006 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 12:48:17,771 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 12:48:18,610 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 12:48:19,404 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 12:48:20,096 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 12:48:20,830 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 12:48:21,568 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 12:48:22,197 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 12:48:22,205 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /home/runsgar exists] *****************************************************************************************************************************************************************
+2022-08-18 12:48:22,949 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:22,956 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий для виртуальных окружений] *******************************************************************************************************************************************************
+2022-08-18 12:48:23,939 p=470466 u=anevdokimov n=ansible | [WARNING]: Consider using the file module with state=directory rather than running 'mkdir'.  If you need to use command because file is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2022-08-18 12:48:23,940 p=470466 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:23,954 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /home/runsgar/api_sgar exists] ********************************************************************************************************************************************************
+2022-08-18 12:48:24,708 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:24,714 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий /home/runsgar/api_sgar] **********************************************************************************************************************************************************
+2022-08-18 12:48:25,498 p=470466 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:25,505 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /home/runsgar/api_sgar/venv exists] ***************************************************************************************************************************************************
+2022-08-18 12:48:26,194 p=470466 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:48:26,201 p=470466 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения api_sgar] ************************************************************************************************************************************************************
+2022-08-18 12:48:26,889 p=470466 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unable to change directory before execution: [Errno 2] Нет такого файла или каталога: '/var/www/api_sgar'
+
+2022-08-18 12:48:26,891 p=470466 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 12:48:26,893 p=470466 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=11   changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2022-08-18 12:49:09,440 p=471109 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 12:49:09,440 p=471109 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 12:49:09,852 p=471109 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 12:49:09,882 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 12:49:11,062 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:11,067 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 12:49:11,129 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:11,135 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 12:49:11,960 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:11,966 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 12:49:12,031 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:12,038 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 12:49:12,815 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:12,821 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 12:49:12,884 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:12,890 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 12:49:13,815 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:13,824 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 12:49:13,901 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:13,908 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 12:49:14,681 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:14,687 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 12:49:14,762 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:14,770 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 12:49:16,311 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 12:49:17,519 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 12:49:18,383 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 12:49:19,200 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 12:49:20,165 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 12:49:21,126 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 12:49:21,986 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 12:49:22,816 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 12:49:23,774 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 12:49:24,691 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 12:49:25,412 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 12:49:26,053 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 12:49:26,780 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 12:49:27,641 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 12:49:28,348 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 12:49:29,009 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 12:49:29,016 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /home/runsgar exists] *****************************************************************************************************************************************************************
+2022-08-18 12:49:29,598 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:29,604 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий для виртуальных окружений] *******************************************************************************************************************************************************
+2022-08-18 12:49:29,665 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:29,672 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /home/runsgar/api_sgar exists] ********************************************************************************************************************************************************
+2022-08-18 12:49:30,243 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:30,249 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий /home/runsgar/api_sgar] **********************************************************************************************************************************************************
+2022-08-18 12:49:30,344 p=471109 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:30,349 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /home/runsgar/api_sgar/venv exists] ***************************************************************************************************************************************************
+2022-08-18 12:49:30,986 p=471109 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:30,991 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения api_sgar] ************************************************************************************************************************************************************
+2022-08-18 12:49:33,708 p=471109 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:33,714 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 12:49:35,528 p=471109 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:49:35,534 p=471109 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 12:50:09,781 p=471109 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:50:09,783 p=471109 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 12:50:09,785 p=471109 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=12   changed=3    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2022-08-18 12:58:47,654 p=487866 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 12:58:47,655 p=487866 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 12:58:48,280 p=487866 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 12:58:48,325 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 12:58:49,775 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:49,782 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 12:58:49,852 p=487866 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:49,857 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 12:58:50,588 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:50,594 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 12:58:50,662 p=487866 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:50,669 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 12:58:51,245 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:51,252 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 12:58:51,318 p=487866 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:51,325 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 12:58:51,919 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:51,928 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 12:58:51,986 p=487866 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:51,992 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 12:58:52,553 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:52,559 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 12:58:52,616 p=487866 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:58:52,622 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 12:58:53,772 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 12:58:54,684 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 12:58:55,369 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 12:58:56,036 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 12:58:56,759 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 12:58:57,386 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 12:58:58,043 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 12:58:58,727 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 12:58:59,373 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 12:59:00,119 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 12:59:00,942 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 12:59:01,763 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 12:59:02,455 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 12:59:03,168 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 12:59:03,982 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 12:59:04,562 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 12:59:04,569 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/api_sgar exists] ********************************************************************************************************************************************************
+2022-08-18 12:59:05,229 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:59:05,234 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий /home/runsgar/api_sgar] **********************************************************************************************************************************************************
+2022-08-18 12:59:06,032 p=487866 u=anevdokimov n=ansible | [WARNING]: Consider using the file module with state=directory rather than running 'mkdir'.  If you need to use command because file is insufficient you can add 'warn: false' to this command task or set
+'command_warnings=False' in ansible.cfg to get rid of this message.
+
+2022-08-18 12:59:06,032 p=487866 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:59:06,045 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/api_sgar/venv exists] ***************************************************************************************************************************************************
+2022-08-18 12:59:06,635 p=487866 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:59:06,642 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения api_sgar] ************************************************************************************************************************************************************
+2022-08-18 12:59:09,179 p=487866 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:59:09,185 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 12:59:11,173 p=487866 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 12:59:11,180 p=487866 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 12:59:33,340 p=487866 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install wheel && pip3 install -r requirements.txt",
+    "delta": "0:00:21.502939",
+    "end": "2022-08-18 12:59:33.271840",
+    "rc": 1,
+    "start": "2022-08-18 12:59:11.768901"
+}
+
+STDOUT:
+
+Collecting numpy
+  Using cached https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl
+Installing collected packages: numpy
+Successfully installed numpy-1.18.5
+Collecting cython
+  Using cached https://files.pythonhosted.org/packages/e6/10/1ed7e90b97cfb78f31e903a5ddbe45bb647133166af65c2490a1a9eb76de/Cython-0.29.32-cp35-cp35m-manylinux_2_5_x86_64.manylinux1_x86_64.whl
+Installing collected packages: cython
+Successfully installed cython-0.29.32
+Collecting wheel
+  Using cached https://files.pythonhosted.org/packages/27/d6/003e593296a85fd6ed616ed962795b2f87709c3eee2bca4f6d0fe55c6d00/wheel-0.37.1-py2.py3-none-any.whl
+Installing collected packages: wheel
+Successfully installed wheel-0.37.1
+Collecting Django==1.10.3 (from -r requirements.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/0e/ab/16abddb9ab7ee46a26e04a0c8ba1f02b9412a77927dec699c1af6d0070f8/Django-1.10.3-py2.py3-none-any.whl
+Collecting psycopg2==2.7.7 (from -r requirements.txt (line 3))
+  Using cached https://files.pythonhosted.org/packages/e2/ed/1c022748aee0d93a6c123c0739990b0ab32744314bc0752511106613b021/psycopg2-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting psycopg2-binary==2.7.7 (from -r requirements.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/6a/99/cc5d5963fe759d9bd2bed477d98862aef095fa7ecbbca85c091e8400b70d/psycopg2_binary-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Using cached https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Using cached https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Using cached https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Using cached https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Using cached https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Using cached https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Using cached https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Using cached https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pytz==2021.3 (from -r requirements.txt (line 61))
+  Using cached https://files.pythonhosted.org/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl
+Collecting tzlocal==2.1 (from -r requirements.txt (line 63))
+  Using cached https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting APScheduler==3.8.1 (from -r requirements.txt (line 65))
+  Using cached https://files.pythonhosted.org/packages/7b/bc/410764a2e30bd79df344475a1b0691f1fe3ab5385ad3f47f8dcc673babe5/APScheduler-3.8.1-py2.py3-none-any.whl
+Collecting cython==0.29.4 (from -r requirements.txt (line 67))
+  Using cached https://files.pythonhosted.org/packages/1e/db/630ea2ba49a486c06064f5d9fcdacab3b0e651c9497b89990c87da95c4b7/Cython-0.29.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting cftime==1.5.1 (from -r requirements.txt (line 69))
+Collecting netCDF4==1.5.7 (from -r requirements.txt (line 71))
+Collecting pycparser==2.17 (from -r requirements.txt (line 73))
+Collecting cffi==1.9.1 (from -r requirements.txt (line 75))
+  Using cached https://files.pythonhosted.org/packages/96/05/04379df69e617fffdbfcf0c9b3a14dfc5440fb1dd622587279638fab8a24/cffi-1.9.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting asn1crypto==0.22.0 (from -r requirements.txt (line 77))
+  Using cached https://files.pythonhosted.org/packages/97/ba/7e8117d8efcee589f4d96dd2b2eb1d997f96d27d214cf2b7134ad8acf6ab/asn1crypto-0.22.0-py2.py3-none-any.whl
+Collecting cryptography==2.2.2 (from -r requirements.txt (line 79))
+  Using cached https://files.pythonhosted.org/packages/fa/f4/3cde3604972dfa2b0fea85b9711948bb4fb70ab64095322aef35071bd254/cryptography-2.2.2-cp34-abi3-manylinux1_x86_64.whl
+Collecting pycrypto==2.6.1 (from -r requirements.txt (line 81))
+Collecting jwt==0.3.2 (from -r requirements.txt (line 83))
+Collecting Pillow==5.4.1 (from -r requirements.txt (line 85))
+  Using cached https://files.pythonhosted.org/packages/8b/e9/5c47710fe383f0582da668302a80a6355fe15c2ce2dde89b50fe34acefa6/Pillow-5.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting mod_wsgi (from -r requirements.txt (line 87))
+  Downloading https://files.pythonhosted.org/packages/c2/3e/1a39b04af92752065f86ffa26344292edcaded3fa34da0ee065248e6c245/mod_wsgi-4.9.3.tar.gz (497kB)
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-build-rofaiqwq/mod-wsgi/setup.py", line 91, in <module>
+        'missing Apache httpd server packages.' % APXS)
+    RuntimeError: The 'apxs' command appears not to be installed or is not executable. Please check the list of prerequisites in the documentation for this package and install any missing Apache httpd server packages.
+    
+    ----------------------------------------
+
+
+STDERR:
+
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-rofaiqwq/mod-wsgi/
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 12:59:33,342 p=487866 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 12:59:33,344 p=487866 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=11   changed=3    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2022-08-18 13:02:53,476 p=496684 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 13:02:53,476 p=496684 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 13:02:54,038 p=496684 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 13:02:54,078 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 13:02:55,053 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:55,063 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 13:02:55,136 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:55,143 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 13:02:55,765 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:55,773 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 13:02:55,871 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:55,878 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 13:02:56,498 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:56,507 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 13:02:56,575 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:56,583 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 13:02:57,136 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:57,141 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 13:02:57,226 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:57,234 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 13:02:57,831 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:57,840 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 13:02:57,909 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:02:57,916 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 13:02:59,158 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 13:03:00,098 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 13:03:00,789 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 13:03:01,468 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 13:03:02,193 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 13:03:02,825 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 13:03:03,640 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 13:03:04,298 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 13:03:05,000 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 13:03:05,789 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 13:03:06,664 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 13:03:07,759 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 13:03:08,466 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 13:03:09,211 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 13:03:09,974 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 13:03:10,739 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 13:03:10,745 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/api_sgar exists] ********************************************************************************************************************************************************
+2022-08-18 13:03:11,391 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:03:11,396 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий /home/runsgar/api_sgar] **********************************************************************************************************************************************************
+2022-08-18 13:03:11,451 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:03:11,457 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/api_sgar/venv exists] ***************************************************************************************************************************************************
+2022-08-18 13:03:12,119 p=496684 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:03:12,125 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения api_sgar] ************************************************************************************************************************************************************
+2022-08-18 13:03:12,180 p=496684 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:03:12,187 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 13:03:13,913 p=496684 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:03:13,918 p=496684 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 13:07:36,829 p=496684 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": true,
+    "cmd": "source venv/bin/activate && pip3 install numpy && pip3 install cython && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install wheel && pip3 install -r requirements.txt",
+    "delta": "0:04:22.070588",
+    "end": "2022-08-18 13:07:36.723302",
+    "rc": 1,
+    "start": "2022-08-18 13:03:14.652714"
+}
+
+STDOUT:
+
+Requirement already satisfied: numpy in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: cython in ./venv/lib/python3.5/site-packages
+Requirement already satisfied: wheel in ./venv/lib/python3.5/site-packages
+Collecting Django==1.10.3 (from -r requirements.txt (line 1))
+  Using cached https://files.pythonhosted.org/packages/0e/ab/16abddb9ab7ee46a26e04a0c8ba1f02b9412a77927dec699c1af6d0070f8/Django-1.10.3-py2.py3-none-any.whl
+Collecting psycopg2==2.7.7 (from -r requirements.txt (line 3))
+  Using cached https://files.pythonhosted.org/packages/e2/ed/1c022748aee0d93a6c123c0739990b0ab32744314bc0752511106613b021/psycopg2-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting psycopg2-binary==2.7.7 (from -r requirements.txt (line 5))
+  Using cached https://files.pythonhosted.org/packages/6a/99/cc5d5963fe759d9bd2bed477d98862aef095fa7ecbbca85c091e8400b70d/psycopg2_binary-2.7.7-cp35-cp35m-manylinux1_x86_64.whl
+Collecting GDAL==2.0.0 (from -r requirements.txt (line 7))
+Collecting setuptools_scm==3.4.1 (from -r requirements.txt (line 9))
+  Using cached https://files.pythonhosted.org/packages/13/c3/1b3e8777d47539f913705a996f90d5a3a7a503eeef5059984b20589ce77d/setuptools_scm-3.4.1-py2.py3-none-any.whl
+Collecting typeguard==2.6.0 (from -r requirements.txt (line 11))
+  Using cached https://files.pythonhosted.org/packages/8e/7b/f40a24d790227927f3c95b4cb5981d417b88cdc806575ddcdf985776e403/typeguard-2.6.0-py3-none-any.whl
+Collecting wrapt==1.11.2 (from -r requirements.txt (line 13))
+Collecting tqdm==4.41.0 (from -r requirements.txt (line 15))
+  Using cached https://files.pythonhosted.org/packages/8c/c3/d049cf3fb31094ee045ec1ee29fffac218c91e82c8838c49ab4c3e52627b/tqdm-4.41.0-py2.py3-none-any.whl
+Collecting termcolor==1.1.0 (from -r requirements.txt (line 17))
+Collecting six==1.16.0 (from -r requirements.txt (line 19))
+  Using cached https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl
+Collecting protobuf==3.9.2 (from -r requirements.txt (line 21))
+  Using cached https://files.pythonhosted.org/packages/9c/3e/05df91cc2d08eec88b1869962beb6b144755e7d4a7a6668e1b9f0f450037/protobuf-3.9.2-cp35-cp35m-manylinux1_x86_64.whl
+Collecting googleapis-common-protos==1.6.0 (from -r requirements.txt (line 23))
+Collecting tensorflow-metadata==0.12.1 (from -r requirements.txt (line 25))
+  Using cached https://files.pythonhosted.org/packages/8d/89/69a1ba9ac3102162206fcb671c6b677a03c9a8651a995017407f68bf438d/tensorflow_metadata-0.12.1-py2.py3-none-any.whl
+Collecting urllib3==1.25.7 (from -r requirements.txt (line 27))
+  Using cached https://files.pythonhosted.org/packages/b4/40/a9837291310ee1ccc242ceb6ebfd9eb21539649f193a7c8c86ba15b98539/urllib3-1.25.7-py2.py3-none-any.whl
+Collecting idna==2.9 (from -r requirements.txt (line 29))
+  Using cached https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl
+Collecting chardet==4.0.0 (from -r requirements.txt (line 31))
+  Using cached https://files.pythonhosted.org/packages/19/c7/fa589626997dd07bd87d9269342ccb74b1720384a4d739a1872bd84fbe68/chardet-4.0.0-py2.py3-none-any.whl
+Collecting certifi==2021.5.30 (from -r requirements.txt (line 33))
+  Using cached https://files.pythonhosted.org/packages/05/1b/0a0dece0e8aa492a6ec9e4ad2fe366b511558cdc73fd3abc82ba7348e875/certifi-2021.5.30-py2.py3-none-any.whl
+Collecting requests==2.25.1 (from -r requirements.txt (line 35))
+  Using cached https://files.pythonhosted.org/packages/29/c1/24814557f1d22c56d50280771a17307e6bf87b70727d975fd6b2ce6b014a/requests-2.25.1-py2.py3-none-any.whl
+Collecting promise==2.3 (from -r requirements.txt (line 37))
+Collecting numpy==1.17.4 (from -r requirements.txt (line 39))
+  Using cached https://files.pythonhosted.org/packages/ab/e9/2561dbfbc05146bffa02167e09b9902e273decb2dc4cd5c43314ede20312/numpy-1.17.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting future==0.18.2 (from -r requirements.txt (line 41))
+Collecting dill==0.3.1.1 (from -r requirements.txt (line 43))
+Collecting attrs==21.4.0 (from -r requirements.txt (line 45))
+  Using cached https://files.pythonhosted.org/packages/be/be/7abce643bfdf8ca01c48afa2ddf8308c2308b0c3b239a44e57d020afa0ef/attrs-21.4.0-py2.py3-none-any.whl
+Collecting absl-py==0.9.0 (from -r requirements.txt (line 47))
+Collecting tensorflow-datasets==1.3.2 (from -r requirements.txt (line 49))
+  Using cached https://files.pythonhosted.org/packages/8b/2e/77823b3754af2eb2ca6f3676f91741fafa44bc653cfafc267c70afd7355f/tensorflow_datasets-1.3.2-py3-none-any.whl
+Collecting more-itertools==8.0.2 (from -r requirements.txt (line 51))
+  Using cached https://files.pythonhosted.org/packages/68/03/0604cec1ea13c9f063dd50f900d1a36160334dd3cfb01fd0e638f61b46ba/more_itertools-8.0.2-py3-none-any.whl
+Collecting zipp==0.6.0 (from -r requirements.txt (line 53))
+  Using cached https://files.pythonhosted.org/packages/74/3d/1ee25a26411ba0401b43c6376d2316a71addcc72ef8690b101b4ea56d76a/zipp-0.6.0-py2.py3-none-any.whl
+Collecting importlib_metadata==2.0.0 (from -r requirements.txt (line 55))
+  Using cached https://files.pythonhosted.org/packages/6d/6d/f4bb28424bc677bce1210bc19f69a43efe823e294325606ead595211f93e/importlib_metadata-2.0.0-py2.py3-none-any.whl
+Collecting Click==7.0 (from -r requirements.txt (line 57))
+  Using cached https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl
+Collecting pytz==2021.3 (from -r requirements.txt (line 61))
+  Using cached https://files.pythonhosted.org/packages/d3/e3/d9f046b5d1c94a3aeab15f1f867aa414f8ee9d196fae6865f1d6a0ee1a0b/pytz-2021.3-py2.py3-none-any.whl
+Collecting tzlocal==2.1 (from -r requirements.txt (line 63))
+  Using cached https://files.pythonhosted.org/packages/5d/94/d47b0fd5988e6b7059de05720a646a2930920fff247a826f61674d436ba4/tzlocal-2.1-py2.py3-none-any.whl
+Collecting APScheduler==3.8.1 (from -r requirements.txt (line 65))
+  Using cached https://files.pythonhosted.org/packages/7b/bc/410764a2e30bd79df344475a1b0691f1fe3ab5385ad3f47f8dcc673babe5/APScheduler-3.8.1-py2.py3-none-any.whl
+Collecting cython==0.29.4 (from -r requirements.txt (line 67))
+  Using cached https://files.pythonhosted.org/packages/1e/db/630ea2ba49a486c06064f5d9fcdacab3b0e651c9497b89990c87da95c4b7/Cython-0.29.4-cp35-cp35m-manylinux1_x86_64.whl
+Collecting cftime==1.5.1 (from -r requirements.txt (line 69))
+Collecting netCDF4==1.5.7 (from -r requirements.txt (line 71))
+Collecting pycparser==2.17 (from -r requirements.txt (line 73))
+Collecting cffi==1.9.1 (from -r requirements.txt (line 75))
+  Using cached https://files.pythonhosted.org/packages/96/05/04379df69e617fffdbfcf0c9b3a14dfc5440fb1dd622587279638fab8a24/cffi-1.9.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting asn1crypto==0.22.0 (from -r requirements.txt (line 77))
+  Using cached https://files.pythonhosted.org/packages/97/ba/7e8117d8efcee589f4d96dd2b2eb1d997f96d27d214cf2b7134ad8acf6ab/asn1crypto-0.22.0-py2.py3-none-any.whl
+Collecting cryptography==2.2.2 (from -r requirements.txt (line 79))
+  Using cached https://files.pythonhosted.org/packages/fa/f4/3cde3604972dfa2b0fea85b9711948bb4fb70ab64095322aef35071bd254/cryptography-2.2.2-cp34-abi3-manylinux1_x86_64.whl
+Collecting pycrypto==2.6.1 (from -r requirements.txt (line 81))
+Collecting jwt==0.3.2 (from -r requirements.txt (line 83))
+Collecting Pillow==5.4.1 (from -r requirements.txt (line 85))
+  Using cached https://files.pythonhosted.org/packages/8b/e9/5c47710fe383f0582da668302a80a6355fe15c2ce2dde89b50fe34acefa6/Pillow-5.4.1-cp35-cp35m-manylinux1_x86_64.whl
+Collecting mod-wsgi-httpd (from -r requirements.txt (line 86))
+  Downloading https://files.pythonhosted.org/packages/0d/ba/a4f271050cfae3a576da4738f19865f4950867989a7792f34a35d55dd5b1/mod_wsgi-httpd-2.4.54.1.tar.gz (13.5MB)
+Collecting mod_wsgi (from -r requirements.txt (line 87))
+  Using cached https://files.pythonhosted.org/packages/c2/3e/1a39b04af92752065f86ffa26344292edcaded3fa34da0ee065248e6c245/mod_wsgi-4.9.3.tar.gz
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/tmp/pip-build-j_kgaaci/mod-wsgi/setup.py", line 91, in <module>
+        'missing Apache httpd server packages.' % APXS)
+    RuntimeError: The 'apxs' command appears not to be installed or is not executable. Please check the list of prerequisites in the documentation for this package and install any missing Apache httpd server packages.
+    
+    ----------------------------------------
+
+
+STDERR:
+
+Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-j_kgaaci/mod-wsgi/
+
+
+MSG:
+
+non-zero return code
+
+2022-08-18 13:07:36,831 p=496684 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 13:07:36,851 p=496684 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=9    changed=1    unreachable=0    failed=1    skipped=7    rescued=0    ignored=0   
+2022-08-18 13:11:26,519 p=513548 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-18 13:11:26,519 p=513548 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-18 13:11:27,136 p=513548 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-18 13:11:27,210 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www exists] **********************************************************************************************************************************************************************
+2022-08-18 13:11:28,377 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:28,385 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www] ************************************************************************************************************************************************************************
+2022-08-18 13:11:28,460 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:28,468 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/html exists] *****************************************************************************************************************************************************************
+2022-08-18 13:11:29,267 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:29,273 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/html] *******************************************************************************************************************************************************************
+2022-08-18 13:11:29,330 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:29,336 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/static exists] ***************************************************************************************************************************************************************
+2022-08-18 13:11:29,828 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:29,835 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/static] *****************************************************************************************************************************************************************
+2022-08-18 13:11:29,902 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:29,908 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/media exists] ****************************************************************************************************************************************************************
+2022-08-18 13:11:30,339 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:30,345 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/media] ******************************************************************************************************************************************************************
+2022-08-18 13:11:30,456 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:30,462 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR exists] *****************************************************************************************************************************************************************
+2022-08-18 13:11:30,984 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:30,990 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директории /var/www/SGAR] *******************************************************************************************************************************************************************
+2022-08-18 13:11:31,048 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:31,054 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-18 13:11:32,056 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-18 13:11:33,047 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-18 13:11:34,038 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-18 13:11:35,542 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-18 13:11:37,593 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-18 13:11:39,274 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-18 13:11:39,922 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-18 13:11:40,565 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-18 13:11:41,320 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-18 13:11:42,190 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-18 13:11:43,295 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-18 13:11:44,219 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-18 13:11:45,265 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-18 13:11:50,114 p=513548 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech] => (item=apache2-dev)
+2022-08-18 13:11:50,855 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-18 13:11:51,579 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-18 13:11:52,263 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-18 13:11:52,273 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/api_sgar exists] ********************************************************************************************************************************************************
+2022-08-18 13:11:53,005 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:53,014 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание директорий /home/runsgar/api_sgar] **********************************************************************************************************************************************************
+2022-08-18 13:11:53,091 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:53,100 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Check that the /var/www/SGAR/api_sgar/venv exists] ***************************************************************************************************************************************************
+2022-08-18 13:11:53,807 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:53,813 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Создание виртуального окружения api_sgar] ************************************************************************************************************************************************************
+2022-08-18 13:11:53,898 p=513548 u=anevdokimov n=ansible | skipping: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:53,908 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : Доставка requirements.txt для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 13:11:55,405 p=513548 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:11:55,412 p=513548 u=anevdokimov n=ansible | TASK [1sgar02 : requirements.txt activate для api_sgar] **************************************************************************************************************************************************************
+2022-08-18 13:16:35,068 p=513548 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-18 13:16:35,071 p=513548 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-18 13:16:35,072 p=513548 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=10   changed=2    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
