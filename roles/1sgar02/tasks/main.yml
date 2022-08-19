@@ -1,58 +1,58 @@
 ---
-- name: Check that the /var/www exists
-  stat:
-    path: /var/www
-  register: stat_result_www
+# - name: Check that the /var/www exists
+#   stat:
+#     path: /var/www
+#   register: stat_result_www
 
-- name: Создание директории /var/www
-  shell: 
-    cmd: mkdir www 
-    chdir: /var
-  when: not stat_result_www.stat.exists
+# - name: Создание директории /var/www
+#   shell: 
+#     cmd: mkdir www 
+#     chdir: /var
+#   when: not stat_result_www.stat.exists
 
-- name: Check that the /var/www/html exists
-  stat:
-    path: /var/www/html
-  register: stat_result_html
+# - name: Check that the /var/www/html exists
+#   stat:
+#     path: /var/www/html
+#   register: stat_result_html
 
-- name: Создание директории /var/www/html
-  shell: 
-    cmd: mkdir html 
-    chdir: /var/www/
-  when: not stat_result_html.stat.exists
+# - name: Создание директории /var/www/html
+#   shell: 
+#     cmd: mkdir html 
+#     chdir: /var/www/
+#   when: not stat_result_html.stat.exists
 
-- name: Check that the /var/www/static exists
-  stat:
-    path: /var/www/static
-  register: stat_result_static
+# - name: Check that the /var/www/static exists
+#   stat:
+#     path: /var/www/static
+#   register: stat_result_static
 
-- name: Создание директории /var/www/static
-  shell: 
-    cmd: mkdir static
-    chdir: /var/www/
-  when: not stat_result_static.stat.exists
+# - name: Создание директории /var/www/static
+#   shell: 
+#     cmd: mkdir static
+#     chdir: /var/www/
+#   when: not stat_result_static.stat.exists
 
-- name: Check that the /var/www/media exists
-  stat:
-    path: /var/www/media
-  register: stat_result_media
+# - name: Check that the /var/www/media exists
+#   stat:
+#     path: /var/www/media
+#   register: stat_result_media
 
-- name: Создание директории /var/www/media
-  shell: 
-    cmd: mkdir media
-    chdir: /var/www/
-  when: not stat_result_media.stat.exists
+# - name: Создание директории /var/www/media
+#   shell: 
+#     cmd: mkdir media
+#     chdir: /var/www/
+#   when: not stat_result_media.stat.exists
 
-- name: Check that the /var/www/SGAR exists
-  stat:
-    path: /var/www/SGAR
-  register: stat_result_SGAR
+# - name: Check that the /var/www/SGAR exists
+#   stat:
+#     path: /var/www/SGAR
+#   register: stat_result_SGAR
 
-- name: Создание директории /var/www/SGAR
-  shell: 
-    cmd: mkdir SGAR
-    chdir: /var/www/
-  when: not stat_result_SGAR.stat.exists
+# - name: Создание директории /var/www/SGAR
+#   shell: 
+#     cmd: mkdir SGAR
+#     chdir: /var/www/
+#   when: not stat_result_SGAR.stat.exists
 
 - name: "Install packages"
   apt: 
@@ -134,43 +134,81 @@
 
 
 
-- name: Check that the /var/www/SGAR/api_sgar exists
-  stat:
-    path: /var/www/SGAR/api_sgar
-  register: stat_result_api_sgar
+# - name: Check that the /var/www/SGAR/api_sgar exists
+#   stat:
+#     path: /var/www/SGAR/api_sgar
+#   register: stat_result_api_sgar
 
-- name: Создание директорий /home/runsgar/api_sgar
-  shell: 
-    cmd: mkdir api_sgar
-    chdir: /var/www/SGAR
-  when: not stat_result_api_sgar.stat.exists
+# - name: Создание директорий /home/runsgar/api_sgar
+#   shell: 
+#     cmd: mkdir api_sgar
+#     chdir: /var/www/SGAR
+#   when: not stat_result_api_sgar.stat.exists
 
-- name: Check that the /var/www/SGAR/api_sgar/venv exists
-  stat:
-    path: /var/www/SGAR/api_sgar/venv
-  register: stat_result_venv
+# - name: Check that the /var/www/SGAR/api_sgar/venv exists
+#   stat:
+#     path: /var/www/SGAR/api_sgar/venv
+#   register: stat_result_venv
 
-- name: Создание виртуального окружения api_sgar
-  shell: 
-    cmd: python3 -m venv ./venv
-    chdir: /var/www/SGAR/api_sgar
-  when: not stat_result_venv.stat.exists
+# - name: Создание виртуального окружения api_sgar
+#   shell: 
+#     cmd: python3 -m venv ./venv
+#     chdir: /var/www/SGAR/api_sgar
+#   when: not stat_result_venv.stat.exists
 
-- name: Доставка requirements.txt для api_sgar
-  template:
-    src: templates/requirements.txt
-    dest: /var/www/SGAR/api_sgar/requirements.txt
-    backup: yes
+# - name: Доставка requirements.txt для api_sgar
+#   template:
+#     src: templates/requirements.txt
+#     dest: /var/www/SGAR/api_sgar/requirements.txt
+#     backup: yes
 
-- name: requirements.txt activate для api_sgar
-  shell:
-    cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install wheel && pip3 install -r requirements.txt
-    chdir: /var/www/SGAR/api_sgar
+# - name: requirements.txt activate для api_sgar
+#   shell:
+#     cmd: source venv/bin/activate && pip3 install numpy && pip3 install cython && export CPLUS_INCLUDE_PATH=/usr/include/gdal && export C_INCLUDE_PATH=/usr/include/gdal && pip3 install wheel && pip3 install -r requirements.txt
+#     chdir: /var/www/SGAR/api_sgar
+
+
 
 - name: a2enmod
   shell: 
     cmd: a2enmod wsgi && a2enmod proxy
   notify: 
   - Restart apache2
+
+
+- name: Правка конфигов
+  lineinfile:
+    path: /etc/apache2/sites-available/000-default.conf # required. The file to modify. Before Ansible 2.3 this option was only usable as I(dest), I(destfile) and I(name).
+    regexp: "<VirtualHost *:" # not required. The regular expression to look for in every line of the file. For C(state=present), the pattern to replace if found. Only the last line found will be replaced. For C(state=absent), the pattern of the line(s) to remove. If the regular expression is not matched, the line will be added to the file in keeping with C(insertbefore) or C(insertafter) settings. When modifying a line the regexp should typically match both the initial state of the line as well as its state after replacement by C(line) to ensure idempotence. Uses Python regular expressions. See U(http://docs.python.org/2/library/re.html).
+    line: <VirtualHost *:4200> # not required. The line to insert/replace into the file. Required for C(state=present). If C(backrefs) is set, may contain backreferences that will get expanded with the C(regexp) capture groups if the regexp matches.
+    backup: true
+  notify: 
+  - Restart apache2
+
+- name: Правка конфигов
+  lineinfile:
+    path: /etc/apache2/apache2.conf # required. The file to modify. Before Ansible 2.3 this option was only usable as I(dest), I(destfile) and I(name).
+    # not required. The regular expression to look for in every line of the file. For C(state=present), the pattern to replace if found. Only the last line found will be replaced. For C(state=absent), the pattern of the line(s) to remove. If the regular expression is not matched, the line will be added to the file in keeping with C(insertbefore) or C(insertafter) settings. When modifying a line the regexp should typically match both the initial state of the line as well as its state after replacement by C(line) to ensure idempotence. Uses Python regular expressions. See U(http://docs.python.org/2/library/re.html).
+    line: ProxyPassReverse "/media" "htttp://localhost:8000"
+
+          ProxyPassReverse "/api" "htttp://localhost:8000"
+
+          ProxyPassReverse "/admin" "htttp://localhost:8000"
+
+          ProxyPassReverse "/static" "htttp://localhost:8000"
+
+          ProxyPassReverse "*" "htttp://localhost:4200" # not required. The line to insert/replace into the file. Required for C(state=present). If C(backrefs) is set, may contain backreferences that will get expanded with the C(regexp) capture groups if the regexp matches.
+    insertbefore: "# Include of directories ignores editors' and dpkg's backup files,"
+    backup: true
+
+# - name: Установка apache2.conf
+#   template:
+#     src: templates/apache2.conf # required. Path of a Jinja2 formatted template on the Ansible controller. This can be a relative or an absolute path. The file must be encoded with C(utf-8) but I(output_encoding) can be used to control the encoding of the output template.
+#     dest: /etc/apache2/apache2.conf # required. Location to render the template to on the remote machine.
+#     backup: true
+#   notify: 
+#   - Restart apache2
+
+
 
 ...

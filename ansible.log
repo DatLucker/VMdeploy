@@ -11668,3 +11668,118 @@ removed in version 2.10. Deprecation warnings can be disabled by setting depreca
 2022-08-18 13:16:35,068 p=513548 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
 2022-08-18 13:16:35,071 p=513548 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
 2022-08-18 13:16:35,072 p=513548 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=10   changed=2    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2022-08-19 11:46:33,325 p=183382 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will
+ be removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-19 11:46:33,325 p=183382 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-19 11:46:34,142 p=183382 u=anevdokimov n=ansible | PLAY [1sgar02] ************************************************************************************************************************************************************************************************
+2022-08-19 11:46:34,204 p=183382 u=anevdokimov n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************************************************
+2022-08-19 11:46:36,463 p=183382 u=anevdokimov n=ansible | [WARNING]: Platform linux on host 1sgar02.dmz.aorti.tech is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
+
+2022-08-19 11:46:36,464 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-19 11:46:36,475 p=183382 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] *****************************************************************************************************************************************************************************
+2022-08-19 11:46:37,399 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-19 11:46:38,149 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-19 11:46:38,756 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-19 11:46:39,371 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-19 11:46:40,046 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-19 11:46:40,823 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-19 11:46:41,554 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-19 11:46:42,160 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-19 11:46:42,812 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-19 11:46:43,530 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-19 11:46:44,142 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-19 11:46:44,754 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-19 11:46:45,378 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-19 11:46:46,002 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2-dev)
+2022-08-19 11:46:46,633 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-19 11:46:47,253 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-19 11:46:47,983 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-19 11:46:48,629 p=183382 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libapache2-mod-wsgi)
+2022-08-19 11:46:48,641 p=183382 u=anevdokimov n=ansible | TASK [1sgar02 : a2enmod] **************************************************************************************************************************************************************************************
+2022-08-19 11:46:49,424 p=183382 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 11:46:49,433 p=183382 u=anevdokimov n=ansible | TASK [1sgar02 : Установка apache2.conf] ***********************************************************************************************************************************************************************
+2022-08-19 11:46:50,738 p=183382 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 11:46:50,740 p=183382 u=anevdokimov n=ansible | RUNNING HANDLER [1sgar02 : Restart apache2] *******************************************************************************************************************************************************************
+2022-08-19 11:46:51,862 p=183382 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 11:46:51,865 p=183382 u=anevdokimov n=ansible | PLAY RECAP ****************************************************************************************************************************************************************************************************
+2022-08-19 11:46:51,865 p=183382 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-08-19 13:36:11,179 p=404460 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-19 13:36:11,179 p=404460 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-19 13:36:12,053 p=404460 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-19 13:36:12,130 p=404460 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-19 13:36:13,658 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-19 13:36:14,500 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-19 13:36:15,188 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-19 13:36:15,935 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-19 13:36:16,712 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-19 13:36:17,544 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-19 13:36:18,227 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-19 13:36:18,922 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-19 13:36:19,542 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-19 13:36:20,229 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-19 13:36:20,961 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-19 13:36:21,769 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-19 13:36:22,452 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-19 13:36:23,091 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2-dev)
+2022-08-19 13:36:23,740 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-19 13:36:24,425 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-19 13:36:25,287 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-19 13:36:25,935 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libapache2-mod-wsgi)
+2022-08-19 13:36:25,951 p=404460 u=anevdokimov n=ansible | TASK [1sgar02 : a2enmod] *********************************************************************************************************************************************************************************************
+2022-08-19 13:36:26,721 p=404460 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:36:26,735 p=404460 u=anevdokimov n=ansible | TASK [1sgar02 : Правка конфигов] *************************************************************************************************************************************************************************************
+2022-08-19 13:36:27,380 p=404460 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:36:27,388 p=404460 u=anevdokimov n=ansible | TASK [1sgar02 : Правка конфигов] *************************************************************************************************************************************************************************************
+2022-08-19 13:36:28,008 p=404460 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:36:28,010 p=404460 u=anevdokimov n=ansible | RUNNING HANDLER [1sgar02 : Restart apache2] **************************************************************************************************************************************************************************
+2022-08-19 13:36:29,276 p=404460 u=anevdokimov n=ansible | fatal: [1sgar02.dmz.aorti.tech]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unable to restart service apache2: Job for apache2.service failed because the control process exited with error code.
+See "systemctl status apache2.service" and "journalctl -xe" for details.
+
+
+2022-08-19 13:36:29,277 p=404460 u=anevdokimov n=ansible | NO MORE HOSTS LEFT ***************************************************************************************************************************************************************************************************
+2022-08-19 13:36:29,280 p=404460 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-19 13:36:29,282 p=404460 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-08-19 13:39:22,130 p=413007 u=anevdokimov n=ansible | [DEPRECATION WARNING]: The TRANSFORM_INVALID_GROUP_CHARS settings is set to allow bad characters in group names by default, this will change, but still be user configurable on deprecation. This feature will be 
+removed in version 2.10. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2022-08-19 13:39:22,131 p=413007 u=anevdokimov n=ansible | [WARNING]: Invalid characters were found in group names but not replaced, use -vvvv to see details
+
+2022-08-19 13:39:22,692 p=413007 u=anevdokimov n=ansible | PLAY [1sgar02] *******************************************************************************************************************************************************************************************************
+2022-08-19 13:39:22,771 p=413007 u=anevdokimov n=ansible | TASK [1sgar02 : Install packages] ************************************************************************************************************************************************************************************
+2022-08-19 13:39:23,979 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=postgresql-9.6)
+2022-08-19 13:39:24,814 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=redis-server)
+2022-08-19 13:39:25,471 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python-psycopg2)
+2022-08-19 13:39:26,150 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3-psycopg2)
+2022-08-19 13:39:26,805 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=nodejs)
+2022-08-19 13:39:27,466 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libgdal-dev)
+2022-08-19 13:39:28,113 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libffi-dev)
+2022-08-19 13:39:28,769 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=python3.5-dev)
+2022-08-19 13:39:29,415 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=build-essential)
+2022-08-19 13:39:30,134 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=openssl)
+2022-08-19 13:39:30,860 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libssl-dev)
+2022-08-19 13:39:31,624 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=make)
+2022-08-19 13:39:32,242 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2)
+2022-08-19 13:39:32,841 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=apache2-dev)
+2022-08-19 13:39:33,483 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=git)
+2022-08-19 13:39:34,128 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=gcc=4:6.3.0-4)
+2022-08-19 13:39:34,746 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=autoconf)
+2022-08-19 13:39:35,346 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech] => (item=libapache2-mod-wsgi)
+2022-08-19 13:39:35,354 p=413007 u=anevdokimov n=ansible | TASK [1sgar02 : a2enmod] *********************************************************************************************************************************************************************************************
+2022-08-19 13:39:36,082 p=413007 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:39:36,090 p=413007 u=anevdokimov n=ansible | TASK [1sgar02 : Правка конфигов] *************************************************************************************************************************************************************************************
+2022-08-19 13:39:37,184 p=413007 u=anevdokimov n=ansible | ok: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:39:37,193 p=413007 u=anevdokimov n=ansible | TASK [1sgar02 : Правка конфигов] *************************************************************************************************************************************************************************************
+2022-08-19 13:39:37,975 p=413007 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:39:37,976 p=413007 u=anevdokimov n=ansible | RUNNING HANDLER [1sgar02 : Restart apache2] **************************************************************************************************************************************************************************
+2022-08-19 13:39:39,448 p=413007 u=anevdokimov n=ansible | changed: [1sgar02.dmz.aorti.tech]
+2022-08-19 13:39:39,450 p=413007 u=anevdokimov n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************************************
+2022-08-19 13:39:39,464 p=413007 u=anevdokimov n=ansible | 1sgar02.dmz.aorti.tech     : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
